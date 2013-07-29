@@ -1,0 +1,85 @@
+\hypertarget{classMixLinearCoolingSchedule}{\section{\-Mix\-Linear\-Cooling\-Schedule \-Class \-Reference}
+\label{classMixLinearCoolingSchedule}\index{\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}}
+}
+
+
+\-A linear cooling schedule based on a mix of the total number of iterations and the maximum running time.  
+
+
+
+
+{\ttfamily \#include $<$\-Mix\-Linear\-Cooling\-Schedule.\-h$>$}
+
+\-Inheritance diagram for \-Mix\-Linear\-Cooling\-Schedule\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMixLinearCoolingSchedule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMixLinearCoolingSchedule_a251ce5ccff60cfba8ce6121cbbb0e7f2}{\-Mix\-Linear\-Cooling\-Schedule} (\hyperlink{classISolution}{\-I\-Solution} \&init\-Sol, \hyperlink{classCoolingSchedule__Parameters}{\-Cooling\-Schedule\-\_\-\-Parameters} \&cs\-Param)
+\item 
+\hypertarget{classMixLinearCoolingSchedule_a97e65c5d3b320123218bef961a1b0b25}{virtual \hyperlink{classMixLinearCoolingSchedule_a97e65c5d3b320123218bef961a1b0b25}{$\sim$\-Mix\-Linear\-Cooling\-Schedule} ()}\label{classMixLinearCoolingSchedule_a97e65c5d3b320123218bef961a1b0b25}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{classMixLinearCoolingSchedule_aa388d2510df3ae9eff98bc48df8dc92d}{get\-Current\-Temperature} ()
+\item 
+virtual void \hyperlink{classMixLinearCoolingSchedule_a97c3c7d9e485ee6d1ee5cd19175f56b7}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A linear cooling schedule based on a mix of the total number of iterations and the maximum running time. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classMixLinearCoolingSchedule_a251ce5ccff60cfba8ce6121cbbb0e7f2}{\index{\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}!\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}}
+\index{\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}!MixLinearCoolingSchedule@{\-Mix\-Linear\-Cooling\-Schedule}}
+\subsubsection[{\-Mix\-Linear\-Cooling\-Schedule}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mix\-Linear\-Cooling\-Schedule\-::\-Mix\-Linear\-Cooling\-Schedule} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{init\-Sol, }
+\item[{{\bf \-Cooling\-Schedule\-\_\-\-Parameters} \&}]{cs\-Param}
+\end{DoxyParamCaption}
+)}}\label{classMixLinearCoolingSchedule_a251ce5ccff60cfba8ce6121cbbb0e7f2}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em init\-Sol} & the initial solution. \\
+\hline
+{\em cs\-Param} & the cooling schedule parameters to be used. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classMixLinearCoolingSchedule_aa388d2510df3ae9eff98bc48df8dc92d}{\index{\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}!get\-Current\-Temperature@{get\-Current\-Temperature}}
+\index{get\-Current\-Temperature@{get\-Current\-Temperature}!MixLinearCoolingSchedule@{\-Mix\-Linear\-Cooling\-Schedule}}
+\subsubsection[{get\-Current\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Mix\-Linear\-Cooling\-Schedule\-::get\-Current\-Temperature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classMixLinearCoolingSchedule_aa388d2510df3ae9eff98bc48df8dc92d}
+\-Compute and return the current temperature. \begin{DoxyReturn}{\-Returns}
+the current temperature. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{\-I\-Cooling\-Schedule}.
+
+\hypertarget{classMixLinearCoolingSchedule_a97c3c7d9e485ee6d1ee5cd19175f56b7}{\index{\-Mix\-Linear\-Cooling\-Schedule@{\-Mix\-Linear\-Cooling\-Schedule}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!MixLinearCoolingSchedule@{\-Mix\-Linear\-Cooling\-Schedule}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Mix\-Linear\-Cooling\-Schedule\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classMixLinearCoolingSchedule_a97c3c7d9e485ee6d1ee5cd19175f56b7}
+\-This method should be called when the optimization process start. \-The cooling schedules that actually need this should override this method. 
+
+\-Reimplemented from \hyperlink{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}{\-I\-Cooling\-Schedule}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Mix\-Linear\-Cooling\-Schedule.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Mix\-Linear\-Cooling\-Schedule.\-cpp\end{DoxyCompactItemize}

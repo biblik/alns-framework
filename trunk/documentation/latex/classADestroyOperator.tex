@@ -1,0 +1,83 @@
+\hypertarget{classADestroyOperator}{\section{\-A\-Destroy\-Operator \-Class \-Reference}
+\label{classADestroyOperator}\index{\-A\-Destroy\-Operator@{\-A\-Destroy\-Operator}}
+}
+
+
+\-This is an abstract class used to represent \-Destroy \-Operators.  
+
+
+
+
+{\ttfamily \#include $<$\-A\-Destroy\-Operator.\-h$>$}
+
+\-Inheritance diagram for \-A\-Destroy\-Operator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classADestroyOperator}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classADestroyOperator_a95d52552857dc3cdb076513b27a7fa0e}{\-A\-Destroy\-Operator} (size\-\_\-t mini, size\-\_\-t maxi, std\-::string s)
+\item 
+\hypertarget{classADestroyOperator_a03fcb4d2756e265417956981062b1c63}{virtual \hyperlink{classADestroyOperator_a03fcb4d2756e265417956981062b1c63}{$\sim$\-A\-Destroy\-Operator} ()}\label{classADestroyOperator_a03fcb4d2756e265417956981062b1c63}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classADestroyOperator_a3a744fb78222835cd4d9cf20bd4ffdb7}{destroy\-Solution} (\hyperlink{classISolution}{\-I\-Solution} \&sol)=0
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADestroyOperator_a966017d5974080bade3385ccf805bf52}{size\-\_\-t \hyperlink{classADestroyOperator_a966017d5974080bade3385ccf805bf52}{minimun\-Destroy}}\label{classADestroyOperator_a966017d5974080bade3385ccf805bf52}
+
+\begin{DoxyCompactList}\small\item\em \-The minimum destroy size used. \end{DoxyCompactList}\item 
+\hypertarget{classADestroyOperator_a5b5ab82e3407c05cf1ff1d90c0e31905}{size\-\_\-t \hyperlink{classADestroyOperator_a5b5ab82e3407c05cf1ff1d90c0e31905}{maximum\-Destroy}}\label{classADestroyOperator_a5b5ab82e3407c05cf1ff1d90c0e31905}
+
+\begin{DoxyCompactList}\small\item\em \-The maximum destroy size used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is an abstract class used to represent \-Destroy \-Operators. 
+
+\-Any destroy operator should inherit from this class and implement the destroy\-Solution function. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classADestroyOperator_a95d52552857dc3cdb076513b27a7fa0e}{\index{\-A\-Destroy\-Operator@{\-A\-Destroy\-Operator}!\-A\-Destroy\-Operator@{\-A\-Destroy\-Operator}}
+\index{\-A\-Destroy\-Operator@{\-A\-Destroy\-Operator}!ADestroyOperator@{\-A\-Destroy\-Operator}}
+\subsubsection[{\-A\-Destroy\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-A\-Destroy\-Operator\-::\-A\-Destroy\-Operator} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{mini, }
+\item[{size\-\_\-t}]{maxi, }
+\item[{std\-::string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classADestroyOperator_a95d52552857dc3cdb076513b27a7fa0e}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em mini} & the minimum destroy size. \\
+\hline
+{\em maxi} & the maximum destroy size. \\
+\hline
+{\em s} & the name of the destroy operator. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classADestroyOperator_a3a744fb78222835cd4d9cf20bd4ffdb7}{\index{\-A\-Destroy\-Operator@{\-A\-Destroy\-Operator}!destroy\-Solution@{destroy\-Solution}}
+\index{destroy\-Solution@{destroy\-Solution}!ADestroyOperator@{\-A\-Destroy\-Operator}}
+\subsubsection[{destroy\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-A\-Destroy\-Operator\-::destroy\-Solution} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{sol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classADestroyOperator_a3a744fb78222835cd4d9cf20bd4ffdb7}
+\-This function is the one called to destroy a solution. 
+\begin{DoxyParams}{\-Parameters}
+{\em sol} & the solution to be destroyed. \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-A\-Destroy\-Operator.\-h\end{DoxyCompactItemize}

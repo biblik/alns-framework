@@ -1,0 +1,89 @@
+\hypertarget{classISolution}{\section{\-I\-Solution \-Class \-Reference}
+\label{classISolution}\index{\-I\-Solution@{\-I\-Solution}}
+}
+
+
+\-An interface to define \-Solutions.  
+
+
+
+
+{\ttfamily \#include $<$\-I\-Solution.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classISolution_a364e6cf3ee78b16b4b78d1a5612c5e70}{get\-Objective\-Value} ()=0
+\item 
+virtual double \hyperlink{classISolution_a577a02712a4e973a5acda9926d025afb}{get\-Penalized\-Objective\-Value} ()=0
+\item 
+virtual bool \hyperlink{classISolution_a4619382420ff245fcf12465557587ee6}{is\-Feasible} ()=0
+\item 
+virtual bool \hyperlink{classISolution_a9293d9e9eb00bab08dc25d11c61a1410}{operator$<$} (\hyperlink{classISolution}{\-I\-Solution} \&)=0
+\item 
+virtual int \hyperlink{classISolution_a60ba3056f6733fa50260466f3eb89a21}{distance} (\hyperlink{classISolution}{\-I\-Solution} \&)=0
+\item 
+\hypertarget{classISolution_accb0408d64b7e06f48054708eca34101}{virtual \hyperlink{classISolution}{\-I\-Solution} $\ast$ \hyperlink{classISolution_accb0408d64b7e06f48054708eca34101}{get\-Copy} ()=0}\label{classISolution_accb0408d64b7e06f48054708eca34101}
+
+\begin{DoxyCompactList}\small\item\em \-This method create a copy of the solution. \end{DoxyCompactList}\item 
+\hypertarget{classISolution_a5a3e735aab6b276f1f4da959442ffad6}{virtual long long \hyperlink{classISolution_a5a3e735aab6b276f1f4da959442ffad6}{get\-Hash} ()=0}\label{classISolution_a5a3e735aab6b276f1f4da959442ffad6}
+
+\begin{DoxyCompactList}\small\item\em \-Compute a hash key of the solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-An interface to define \-Solutions. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classISolution_a60ba3056f6733fa50260466f3eb89a21}{\index{\-I\-Solution@{\-I\-Solution}!distance@{distance}}
+\index{distance@{distance}!ISolution@{\-I\-Solution}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-I\-Solution\-::distance} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classISolution_a60ba3056f6733fa50260466f3eb89a21}
+\-Compute the \char`\"{}distance\char`\"{} between solution. \-This feature can be used as part of the \hyperlink{classALNS}{\-A\-L\-N\-S} to favor the diversification process. \-If you do not plan to use this feature just implement a method returning 0. \hypertarget{classISolution_a364e6cf3ee78b16b4b78d1a5612c5e70}{\index{\-I\-Solution@{\-I\-Solution}!get\-Objective\-Value@{get\-Objective\-Value}}
+\index{get\-Objective\-Value@{get\-Objective\-Value}!ISolution@{\-I\-Solution}}
+\subsubsection[{get\-Objective\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double {\bf \-I\-Solution\-::get\-Objective\-Value} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classISolution_a364e6cf3ee78b16b4b78d1a5612c5e70}
+\-A getter for the value of the objective function. \begin{DoxyReturn}{\-Returns}
+the value of the objective function of this solution. 
+\end{DoxyReturn}
+\hypertarget{classISolution_a577a02712a4e973a5acda9926d025afb}{\index{\-I\-Solution@{\-I\-Solution}!get\-Penalized\-Objective\-Value@{get\-Penalized\-Objective\-Value}}
+\index{get\-Penalized\-Objective\-Value@{get\-Penalized\-Objective\-Value}!ISolution@{\-I\-Solution}}
+\subsubsection[{get\-Penalized\-Objective\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double {\bf \-I\-Solution\-::get\-Penalized\-Objective\-Value} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classISolution_a577a02712a4e973a5acda9926d025afb}
+\begin{DoxyReturn}{\-Returns}
+a penalized version of the objective value if the solution is infeasible. 
+\end{DoxyReturn}
+\hypertarget{classISolution_a4619382420ff245fcf12465557587ee6}{\index{\-I\-Solution@{\-I\-Solution}!is\-Feasible@{is\-Feasible}}
+\index{is\-Feasible@{is\-Feasible}!ISolution@{\-I\-Solution}}
+\subsubsection[{is\-Feasible}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool {\bf \-I\-Solution\-::is\-Feasible} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classISolution_a4619382420ff245fcf12465557587ee6}
+\-A getter for the feasibility of the current solution. \begin{DoxyReturn}{\-Returns}
+true if the solution is feasible, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classISolution_a9293d9e9eb00bab08dc25d11c61a1410}{\index{\-I\-Solution@{\-I\-Solution}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!ISolution@{\-I\-Solution}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool \-I\-Solution\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classISolution_a9293d9e9eb00bab08dc25d11c61a1410}
+\-A comparator. \begin{DoxyReturn}{\-Returns}
+true if this solution is \char`\"{}better\char`\"{} than the solution it is compared to. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-I\-Solution.\-h\end{DoxyCompactItemize}

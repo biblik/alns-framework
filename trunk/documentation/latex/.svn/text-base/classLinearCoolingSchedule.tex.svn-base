@@ -1,0 +1,105 @@
+\hypertarget{classLinearCoolingSchedule}{\section{\-Linear\-Cooling\-Schedule \-Class \-Reference}
+\label{classLinearCoolingSchedule}\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}}
+}
+
+
+\-A linear cooling schedule based on the total number of iterations.  
+
+
+
+
+{\ttfamily \#include $<$\-Linear\-Cooling\-Schedule.\-h$>$}
+
+\-Inheritance diagram for \-Linear\-Cooling\-Schedule\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLinearCoolingSchedule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLinearCoolingSchedule_a160016c6d7f09872a5c78a407d502085}{\-Linear\-Cooling\-Schedule} (\hyperlink{classISolution}{\-I\-Solution} \&init\-Sol, \hyperlink{classCoolingSchedule__Parameters}{\-Cooling\-Schedule\-\_\-\-Parameters} \&cs\-Param, size\-\_\-t nb\-Iterations)
+\item 
+\hyperlink{classLinearCoolingSchedule_aa581bf5d7b74d60784050a6d857dccf6}{\-Linear\-Cooling\-Schedule} (double starting\-Temperature, size\-\_\-t nb\-Iterations)
+\item 
+\hypertarget{classLinearCoolingSchedule_a81dba7fe99429e38ec03b865d897e1b9}{virtual \hyperlink{classLinearCoolingSchedule_a81dba7fe99429e38ec03b865d897e1b9}{$\sim$\-Linear\-Cooling\-Schedule} ()}\label{classLinearCoolingSchedule_a81dba7fe99429e38ec03b865d897e1b9}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{classLinearCoolingSchedule_ab47b31f34bfe387e9c70d702a0b6301b}{get\-Current\-Temperature} ()
+\item 
+void \hyperlink{classLinearCoolingSchedule_a384afd4b7b7e89ebf1268974b28fad84}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A linear cooling schedule based on the total number of iterations. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classLinearCoolingSchedule_a160016c6d7f09872a5c78a407d502085}{\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}}
+\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!LinearCoolingSchedule@{\-Linear\-Cooling\-Schedule}}
+\subsubsection[{\-Linear\-Cooling\-Schedule}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Linear\-Cooling\-Schedule\-::\-Linear\-Cooling\-Schedule} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{init\-Sol, }
+\item[{{\bf \-Cooling\-Schedule\-\_\-\-Parameters} \&}]{cs\-Param, }
+\item[{size\-\_\-t}]{nb\-Iterations}
+\end{DoxyParamCaption}
+)}}\label{classLinearCoolingSchedule_a160016c6d7f09872a5c78a407d502085}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em init\-Sol} & the initial solution. \\
+\hline
+{\em cs\-Param} & the cooling schedule parameters. \\
+\hline
+{\em nb\-Iterations} & the number of iterations to be performed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLinearCoolingSchedule_aa581bf5d7b74d60784050a6d857dccf6}{\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}}
+\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!LinearCoolingSchedule@{\-Linear\-Cooling\-Schedule}}
+\subsubsection[{\-Linear\-Cooling\-Schedule}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Linear\-Cooling\-Schedule\-::\-Linear\-Cooling\-Schedule} (
+\begin{DoxyParamCaption}
+\item[{double}]{starting\-Temperature, }
+\item[{size\-\_\-t}]{nb\-Iterations}
+\end{DoxyParamCaption}
+)}}\label{classLinearCoolingSchedule_aa581bf5d7b74d60784050a6d857dccf6}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em starting\-Temperature} & the initial temperature. \\
+\hline
+{\em nb\-Iterations} & the number of iterations to be performed. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classLinearCoolingSchedule_ab47b31f34bfe387e9c70d702a0b6301b}{\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!get\-Current\-Temperature@{get\-Current\-Temperature}}
+\index{get\-Current\-Temperature@{get\-Current\-Temperature}!LinearCoolingSchedule@{\-Linear\-Cooling\-Schedule}}
+\subsubsection[{get\-Current\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Linear\-Cooling\-Schedule\-::get\-Current\-Temperature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classLinearCoolingSchedule_ab47b31f34bfe387e9c70d702a0b6301b}
+\-Compute and return the current temperature. \begin{DoxyReturn}{\-Returns}
+the current temperature. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{\-I\-Cooling\-Schedule}.
+
+\hypertarget{classLinearCoolingSchedule_a384afd4b7b7e89ebf1268974b28fad84}{\index{\-Linear\-Cooling\-Schedule@{\-Linear\-Cooling\-Schedule}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!LinearCoolingSchedule@{\-Linear\-Cooling\-Schedule}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Linear\-Cooling\-Schedule\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classLinearCoolingSchedule_a384afd4b7b7e89ebf1268974b28fad84}
+\-This method should be called when the optimization process start. \-The cooling schedules that actually need this should override this method. 
+
+\-Reimplemented from \hyperlink{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}{\-I\-Cooling\-Schedule}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Linear\-Cooling\-Schedule.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Linear\-Cooling\-Schedule.\-cpp\end{DoxyCompactItemize}

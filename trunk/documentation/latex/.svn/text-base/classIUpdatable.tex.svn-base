@@ -1,0 +1,26 @@
+\hypertarget{classIUpdatable}{\section{\-I\-Updatable \-Class \-Reference}
+\label{classIUpdatable}\index{\-I\-Updatable@{\-I\-Updatable}}
+}
+
+
+\-An interface define object that should be updated using solution information or iteration status information.  
+
+
+
+
+{\ttfamily \#include $<$\-I\-Updatable.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIUpdatable_a827ad7762d82343eb1fa07406e74951c}{virtual void {\bfseries update} (\hyperlink{classISolution}{\-I\-Solution} \&sol, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)=0}\label{classIUpdatable_a827ad7762d82343eb1fa07406e74951c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-An interface define object that should be updated using solution information or iteration status information. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-I\-Updatable.\-h\end{DoxyCompactItemize}

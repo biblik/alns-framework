@@ -1,0 +1,72 @@
+\hypertarget{classSimulatedAnnealing}{\section{\-Simulated\-Annealing \-Class \-Reference}
+\label{classSimulatedAnnealing}\index{\-Simulated\-Annealing@{\-Simulated\-Annealing}}
+}
+
+
+\-Use a simulated annealing principle to decide whether or not a new solution should be accepted as the current solution.  
+
+
+
+
+{\ttfamily \#include $<$\-Simulated\-Annealing.\-h$>$}
+
+\-Inheritance diagram for \-Simulated\-Annealing\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSimulatedAnnealing}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimulatedAnnealing_ab8106a8cd0e1e6ec82e6e74a27639308}{\-Simulated\-Annealing} (\hyperlink{classICoolingSchedule}{\-I\-Cooling\-Schedule} \&cs)
+\item 
+\hypertarget{classSimulatedAnnealing_ab8630a5a98e257bab37f9b998329e397}{virtual \hyperlink{classSimulatedAnnealing_ab8630a5a98e257bab37f9b998329e397}{$\sim$\-Simulated\-Annealing} ()}\label{classSimulatedAnnealing_ab8630a5a98e257bab37f9b998329e397}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classSimulatedAnnealing_a1bea2151b5c2b9b18f16bb47337af3cc}{bool \hyperlink{classSimulatedAnnealing_a1bea2151b5c2b9b18f16bb47337af3cc}{transition\-Accepted} (\hyperlink{classIBestSolutionManager}{\-I\-Best\-Solution\-Manager} \&best\-Solution\-Manager, \hyperlink{classISolution}{\-I\-Solution} \&current\-Solution, \hyperlink{classISolution}{\-I\-Solution} \&new\-Solution, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)}\label{classSimulatedAnnealing_a1bea2151b5c2b9b18f16bb47337af3cc}
+
+\begin{DoxyCompactList}\small\item\em \-Compute if the newly created solution have to be accepted or not. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classSimulatedAnnealing_a13ddd574a0528f64801016a235ec8ee3}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Use a simulated annealing principle to decide whether or not a new solution should be accepted as the current solution. 
+
+\-If you are interested by simulated annealing, please refer to\-: \-Kirkpatrick, \-S.; \-Gelatt, \-C. \-D.; \-Vecchi, \-M. \-P. (1983). \char`\"{}\-Optimization by Simulated
+ Annealing\char`\"{}. \-Science 220 (4598)\-: 671–680 or \href{http://en.wikipedia.org/wiki/Simulated_annealing}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Simulated\-\_\-annealing} 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classSimulatedAnnealing_ab8106a8cd0e1e6ec82e6e74a27639308}{\index{\-Simulated\-Annealing@{\-Simulated\-Annealing}!\-Simulated\-Annealing@{\-Simulated\-Annealing}}
+\index{\-Simulated\-Annealing@{\-Simulated\-Annealing}!SimulatedAnnealing@{\-Simulated\-Annealing}}
+\subsubsection[{\-Simulated\-Annealing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Simulated\-Annealing\-::\-Simulated\-Annealing} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Cooling\-Schedule} \&}]{cs}
+\end{DoxyParamCaption}
+)}}\label{classSimulatedAnnealing_ab8106a8cd0e1e6ec82e6e74a27639308}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em cs} & the cooling schedule to be used by the simulated annealing. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSimulatedAnnealing_a13ddd574a0528f64801016a235ec8ee3}{\index{\-Simulated\-Annealing@{\-Simulated\-Annealing}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!SimulatedAnnealing@{\-Simulated\-Annealing}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simulated\-Annealing\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classSimulatedAnnealing_a13ddd574a0528f64801016a235ec8ee3}
+\-Some \-Acceptance modules needs to initialize some variable only when the solver actualy starts working. \-In this case you should override this method. 
+
+\-Reimplemented from \hyperlink{classIAcceptanceModule_adf6b1054982d528815e339aa8a829d4a}{\-I\-Acceptance\-Module}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Simulated\-Annealing.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Simulated\-Annealing.\-cpp\end{DoxyCompactItemize}

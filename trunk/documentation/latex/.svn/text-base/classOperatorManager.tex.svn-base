@@ -1,0 +1,141 @@
+\hypertarget{classOperatorManager}{\section{\-Operator\-Manager \-Class \-Reference}
+\label{classOperatorManager}\index{\-Operator\-Manager@{\-Operator\-Manager}}
+}
+
+
+\-A simple implementation of an operator manager, that does not allow to simply couple the destroy and repair operators.  
+
+
+
+
+{\ttfamily \#include $<$\-Operator\-Manager.\-h$>$}
+
+\-Inheritance diagram for \-Operator\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOperatorManager}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOperatorManager_ae4f84de6b7812b951ee202e8c2afe478}{\-Operator\-Manager} (\hyperlink{classALNS__Parameters}{\-A\-L\-N\-S\-\_\-\-Parameters} \&param)
+\item 
+\hypertarget{classOperatorManager_ad0b56a48c3e5ccb422f8944bcd3dce6d}{virtual \hyperlink{classOperatorManager_ad0b56a48c3e5ccb422f8944bcd3dce6d}{$\sim$\-Operator\-Manager} ()}\label{classOperatorManager_ad0b56a48c3e5ccb422f8944bcd3dce6d}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOperatorManager_afcd6148f23aa4faae18bc5b8a08cbd20}{recompute\-Weights} ()
+\item 
+\hyperlink{classADestroyOperator}{\-A\-Destroy\-Operator} \& \hyperlink{classOperatorManager_ae2b34fa76d49119d61836db181890085}{select\-Destroy\-Operator} ()
+\item 
+\hyperlink{classARepairOperator}{\-A\-Repair\-Operator} \& \hyperlink{classOperatorManager_a620514b4b09095e5533e2fe3a44df529}{select\-Repair\-Operator} ()
+\item 
+void \hyperlink{classOperatorManager_a4bbeee23953420b0be2d6a72388e75e9}{add\-Repair\-Operator} (\hyperlink{classARepairOperator}{\-A\-Repair\-Operator} \&repair\-Operator)
+\item 
+void \hyperlink{classOperatorManager_a5760dee74c37a6d5e3fea78250afbd69}{add\-Destroy\-Operator} (\hyperlink{classADestroyOperator}{\-A\-Destroy\-Operator} \&destroy\-Operator)
+\item 
+void \hyperlink{classOperatorManager_a7313370bb35e71f7a70e770c4f1f8c14}{sanity\-Checks} ()
+\item 
+\hypertarget{classOperatorManager_a06445bfd3151e3dfa51b06ab1664a7c7}{virtual void \hyperlink{classOperatorManager_a06445bfd3151e3dfa51b06ab1664a7c7}{update\-Scores} (\hyperlink{classADestroyOperator}{\-A\-Destroy\-Operator} \&des, \hyperlink{classARepairOperator}{\-A\-Repair\-Operator} \&rep, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)}\label{classOperatorManager_a06445bfd3151e3dfa51b06ab1664a7c7}
+
+\begin{DoxyCompactList}\small\item\em \-Update the scores of the operators. \end{DoxyCompactList}\item 
+\hypertarget{classOperatorManager_ac045229cf93bef316f3afd7a36c9a185}{virtual void \hyperlink{classOperatorManager_ac045229cf93bef316f3afd7a36c9a185}{start\-Signal} ()}\label{classOperatorManager_ac045229cf93bef316f3afd7a36c9a185}
+
+\begin{DoxyCompactList}\small\item\em \-Indicate that the optimization process starts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A simple implementation of an operator manager, that does not allow to simply couple the destroy and repair operators. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classOperatorManager_ae4f84de6b7812b951ee202e8c2afe478}{\index{\-Operator\-Manager@{\-Operator\-Manager}!\-Operator\-Manager@{\-Operator\-Manager}}
+\index{\-Operator\-Manager@{\-Operator\-Manager}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{\-Operator\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Operator\-Manager\-::\-Operator\-Manager} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-A\-L\-N\-S\-\_\-\-Parameters} \&}]{param}
+\end{DoxyParamCaption}
+)}}\label{classOperatorManager_ae4f84de6b7812b951ee202e8c2afe478}
+\-Constructor 
+\begin{DoxyParams}{\-Parameters}
+{\em param} & the parameters to be used. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classOperatorManager_a5760dee74c37a6d5e3fea78250afbd69}{\index{\-Operator\-Manager@{\-Operator\-Manager}!add\-Destroy\-Operator@{add\-Destroy\-Operator}}
+\index{add\-Destroy\-Operator@{add\-Destroy\-Operator}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{add\-Destroy\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Operator\-Manager\-::add\-Destroy\-Operator} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-A\-Destroy\-Operator} \&}]{destroy\-Operator}
+\end{DoxyParamCaption}
+)}}\label{classOperatorManager_a5760dee74c37a6d5e3fea78250afbd69}
+\-This method adds a destroy operator to the list of destroy operator managed by this manager. 
+\begin{DoxyParams}{\-Parameters}
+{\em destroy\-Operator} & the destroy operator to be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classOperatorManager_a4bbeee23953420b0be2d6a72388e75e9}{\index{\-Operator\-Manager@{\-Operator\-Manager}!add\-Repair\-Operator@{add\-Repair\-Operator}}
+\index{add\-Repair\-Operator@{add\-Repair\-Operator}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{add\-Repair\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Operator\-Manager\-::add\-Repair\-Operator} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-A\-Repair\-Operator} \&}]{repair\-Operator}
+\end{DoxyParamCaption}
+)}}\label{classOperatorManager_a4bbeee23953420b0be2d6a72388e75e9}
+\-This method adds a repair operator to the list of repair operator managed by this manager. 
+\begin{DoxyParams}{\-Parameters}
+{\em repair\-Operator} & the repair operator to be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classOperatorManager_afcd6148f23aa4faae18bc5b8a08cbd20}{\index{\-Operator\-Manager@{\-Operator\-Manager}!recompute\-Weights@{recompute\-Weights}}
+\index{recompute\-Weights@{recompute\-Weights}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{recompute\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Operator\-Manager\-::recompute\-Weights} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classOperatorManager_afcd6148f23aa4faae18bc5b8a08cbd20}
+\-This function recompute the weights of every operator managed by this manager. \-Weight recomputation for destroy operators. 
+
+\-Implements \hyperlink{classAOperatorManager}{\-A\-Operator\-Manager}.
+
+\hypertarget{classOperatorManager_a7313370bb35e71f7a70e770c4f1f8c14}{\index{\-Operator\-Manager@{\-Operator\-Manager}!sanity\-Checks@{sanity\-Checks}}
+\index{sanity\-Checks@{sanity\-Checks}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{sanity\-Checks}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Operator\-Manager\-::sanity\-Checks} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classOperatorManager_a7313370bb35e71f7a70e770c4f1f8c14}
+\-This method run some sanity checks to ensure that it is possible to \char`\"{}safely\char`\"{} use this manager within the \hyperlink{classALNS}{\-A\-L\-N\-S}. \hypertarget{classOperatorManager_ae2b34fa76d49119d61836db181890085}{\index{\-Operator\-Manager@{\-Operator\-Manager}!select\-Destroy\-Operator@{select\-Destroy\-Operator}}
+\index{select\-Destroy\-Operator@{select\-Destroy\-Operator}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{select\-Destroy\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-A\-Destroy\-Operator} \& {\bf \-Operator\-Manager\-::select\-Destroy\-Operator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classOperatorManager_ae2b34fa76d49119d61836db181890085}
+\-This method selects a destroy operator. \begin{DoxyReturn}{\-Returns}
+a destroy operator. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classAOperatorManager_a0bafced8312c2d88e7006c08881750bc}{\-A\-Operator\-Manager}.
+
+\hypertarget{classOperatorManager_a620514b4b09095e5533e2fe3a44df529}{\index{\-Operator\-Manager@{\-Operator\-Manager}!select\-Repair\-Operator@{select\-Repair\-Operator}}
+\index{select\-Repair\-Operator@{select\-Repair\-Operator}!OperatorManager@{\-Operator\-Manager}}
+\subsubsection[{select\-Repair\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-A\-Repair\-Operator} \& {\bf \-Operator\-Manager\-::select\-Repair\-Operator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classOperatorManager_a620514b4b09095e5533e2fe3a44df529}
+\-This method selects a repair operator. \begin{DoxyReturn}{\-Returns}
+a repair operator. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classAOperatorManager_a4258cef17ecd22b63804448dfd38ebcc}{\-A\-Operator\-Manager}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-Operator\-Manager.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-Operator\-Manager.\-cpp\end{DoxyCompactItemize}

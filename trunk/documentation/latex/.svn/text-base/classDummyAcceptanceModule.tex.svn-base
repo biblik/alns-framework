@@ -1,0 +1,41 @@
+\hypertarget{classDummyAcceptanceModule}{\section{\-Dummy\-Acceptance\-Module \-Class \-Reference}
+\label{classDummyAcceptanceModule}\index{\-Dummy\-Acceptance\-Module@{\-Dummy\-Acceptance\-Module}}
+}
+
+
+\-This module accept any solution as the current solution.  
+
+
+
+
+{\ttfamily \#include $<$\-Dummy\-Acceptance\-Module.\-h$>$}
+
+\-Inheritance diagram for \-Dummy\-Acceptance\-Module\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDummyAcceptanceModule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDummyAcceptanceModule_ab906bf78a974bbe427ed861b74d7ae79}{\hyperlink{classDummyAcceptanceModule_ab906bf78a974bbe427ed861b74d7ae79}{\-Dummy\-Acceptance\-Module} ()}\label{classDummyAcceptanceModule_ab906bf78a974bbe427ed861b74d7ae79}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classDummyAcceptanceModule_a7e2568aa7b42a6e06d7b3d962a1ff721}{virtual \hyperlink{classDummyAcceptanceModule_a7e2568aa7b42a6e06d7b3d962a1ff721}{$\sim$\-Dummy\-Acceptance\-Module} ()}\label{classDummyAcceptanceModule_a7e2568aa7b42a6e06d7b3d962a1ff721}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classDummyAcceptanceModule_a0db83ebfd5f38764dcd7a747cf3feb5a}{bool \hyperlink{classDummyAcceptanceModule_a0db83ebfd5f38764dcd7a747cf3feb5a}{transition\-Accepted} (\hyperlink{classIBestSolutionManager}{\-I\-Best\-Solution\-Manager} \&best\-Solution\-Manager, \hyperlink{classISolution}{\-I\-Solution} \&current\-Solution, \hyperlink{classISolution}{\-I\-Solution} \&new\-Solution, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)}\label{classDummyAcceptanceModule_a0db83ebfd5f38764dcd7a747cf3feb5a}
+
+\begin{DoxyCompactList}\small\item\em \-Compute if the newly created solution have to be accepted or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This module accept any solution as the current solution. 
+
+\-It can be used when the diversification is ensured through an other mechanism. \-For example when the operators embbed some tabu criterion to prevent them from rebuilding the previous solution. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Dummy\-Acceptance\-Module.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Dummy\-Acceptance\-Module.\-cpp\end{DoxyCompactItemize}

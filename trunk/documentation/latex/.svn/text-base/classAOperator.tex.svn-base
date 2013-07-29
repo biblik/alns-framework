@@ -1,0 +1,95 @@
+\hypertarget{classAOperator}{\section{\-A\-Operator \-Class \-Reference}
+\label{classAOperator}\index{\-A\-Operator@{\-A\-Operator}}
+}
+
+
+\-This abstract class represent an operator, \-Destroy and \-Repair \-Operators inherit from this class.  
+
+
+
+
+{\ttfamily \#include $<$\-A\-Operator.\-h$>$}
+
+\-Inheritance diagram for \-A\-Operator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAOperator}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAOperator_afaaaafa72f7c09e64ecffd2ae83f6c29}{\hyperlink{classAOperator_afaaaafa72f7c09e64ecffd2ae83f6c29}{\-A\-Operator} (std\-::string name)}\label{classAOperator_afaaaafa72f7c09e64ecffd2ae83f6c29}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a7854b2edbcad8022e3965076d5909f0e}{virtual \hyperlink{classAOperator_a7854b2edbcad8022e3965076d5909f0e}{$\sim$\-A\-Operator} ()}\label{classAOperator_a7854b2edbcad8022e3965076d5909f0e}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_aef1d7317fac50612783941a9ed4bdd55}{void \hyperlink{classAOperator_aef1d7317fac50612783941a9ed4bdd55}{init} ()}\label{classAOperator_aef1d7317fac50612783941a9ed4bdd55}
+
+\begin{DoxyCompactList}\small\item\em \-Initialize the values of the numbers of calls. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a5e43e03617a73fc21764e8913cdbb023}{void \hyperlink{classAOperator_a5e43e03617a73fc21764e8913cdbb023}{reset\-Number\-Of\-Calls} ()}\label{classAOperator_a5e43e03617a73fc21764e8913cdbb023}
+
+\begin{DoxyCompactList}\small\item\em reset the number of calls since last eval. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classAOperator_a53e8afe10d5ab0f717e0ee1771ac1e4e}{get\-Total\-Number\-Of\-Calls} ()
+\item 
+size\-\_\-t \hyperlink{classAOperator_aae3aa0fc70bbc10a61057d12856fd4a8}{get\-Number\-Of\-Calls\-Since\-Last\-Evaluation} ()
+\item 
+\hypertarget{classAOperator_a2d63ac666c67ec37a53e7098ecbbf2b2}{void {\bfseries increase\-Number\-Of\-Calls} ()}\label{classAOperator_a2d63ac666c67ec37a53e7098ecbbf2b2}
+
+\item 
+\hypertarget{classAOperator_ad5bf72a25f08aeef21b090543c057cd5}{double \hyperlink{classAOperator_ad5bf72a25f08aeef21b090543c057cd5}{get\-Score} () const }\label{classAOperator_ad5bf72a25f08aeef21b090543c057cd5}
+
+\begin{DoxyCompactList}\small\item\em \-Simple getter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a94bf714d3c808ea9d51a4665912d8761}{double \hyperlink{classAOperator_a94bf714d3c808ea9d51a4665912d8761}{get\-Weight} () const }\label{classAOperator_a94bf714d3c808ea9d51a4665912d8761}
+
+\begin{DoxyCompactList}\small\item\em \-Simple getter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a844c2d404aaedae38aac0f9260b520e3}{void \hyperlink{classAOperator_a844c2d404aaedae38aac0f9260b520e3}{reset\-Score} ()}\label{classAOperator_a844c2d404aaedae38aac0f9260b520e3}
+
+\begin{DoxyCompactList}\small\item\em resetter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_ad49c57980dc06d58f2d5b586e073595c}{void \hyperlink{classAOperator_ad49c57980dc06d58f2d5b586e073595c}{set\-Score} (double s)}\label{classAOperator_ad49c57980dc06d58f2d5b586e073595c}
+
+\begin{DoxyCompactList}\small\item\em \-Simple setter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a89816ff814d27b6260d44f7cefa6112a}{void \hyperlink{classAOperator_a89816ff814d27b6260d44f7cefa6112a}{set\-Weight} (double weight)}\label{classAOperator_a89816ff814d27b6260d44f7cefa6112a}
+
+\begin{DoxyCompactList}\small\item\em \-Simple setter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_a35536ffa9ce03396e5e453698d1a3591}{std\-::string \hyperlink{classAOperator_a35536ffa9ce03396e5e453698d1a3591}{get\-Name} ()}\label{classAOperator_a35536ffa9ce03396e5e453698d1a3591}
+
+\begin{DoxyCompactList}\small\item\em \-Simple getter. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_ae372929e08da0ad6fb960a4519f33a17}{void \hyperlink{classAOperator_ae372929e08da0ad6fb960a4519f33a17}{set\-Noise} ()}\label{classAOperator_ae372929e08da0ad6fb960a4519f33a17}
+
+\begin{DoxyCompactList}\small\item\em \-Set noise to true. \end{DoxyCompactList}\item 
+\hypertarget{classAOperator_ab1d6a25e233ec1383b9919f8dff098f1}{void \hyperlink{classAOperator_ab1d6a25e233ec1383b9919f8dff098f1}{unset\-Noise} ()}\label{classAOperator_ab1d6a25e233ec1383b9919f8dff098f1}
+
+\begin{DoxyCompactList}\small\item\em \-Set noise to false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This abstract class represent an operator, \-Destroy and \-Repair \-Operators inherit from this class. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classAOperator_aae3aa0fc70bbc10a61057d12856fd4a8}{\index{\-A\-Operator@{\-A\-Operator}!get\-Number\-Of\-Calls\-Since\-Last\-Evaluation@{get\-Number\-Of\-Calls\-Since\-Last\-Evaluation}}
+\index{get\-Number\-Of\-Calls\-Since\-Last\-Evaluation@{get\-Number\-Of\-Calls\-Since\-Last\-Evaluation}!AOperator@{\-A\-Operator}}
+\subsubsection[{get\-Number\-Of\-Calls\-Since\-Last\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t {\bf \-A\-Operator\-::get\-Number\-Of\-Calls\-Since\-Last\-Evaluation} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classAOperator_aae3aa0fc70bbc10a61057d12856fd4a8}
+\-Simple getter. \begin{DoxyReturn}{\-Returns}
+the number of calls to this operator since the last evaluation. 
+\end{DoxyReturn}
+\hypertarget{classAOperator_a53e8afe10d5ab0f717e0ee1771ac1e4e}{\index{\-A\-Operator@{\-A\-Operator}!get\-Total\-Number\-Of\-Calls@{get\-Total\-Number\-Of\-Calls}}
+\index{get\-Total\-Number\-Of\-Calls@{get\-Total\-Number\-Of\-Calls}!AOperator@{\-A\-Operator}}
+\subsubsection[{get\-Total\-Number\-Of\-Calls}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t {\bf \-A\-Operator\-::get\-Total\-Number\-Of\-Calls} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classAOperator_a53e8afe10d5ab0f717e0ee1771ac1e4e}
+\-Simple getter. \begin{DoxyReturn}{\-Returns}
+the total number of calls to the operator since the beginning of the optimization process. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-A\-Operator.\-h\end{DoxyCompactItemize}

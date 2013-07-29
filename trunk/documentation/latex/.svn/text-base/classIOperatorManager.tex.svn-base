@@ -1,0 +1,20 @@
+\hypertarget{classIOperatorManager}{\section{\-I\-Operator\-Manager \-Class \-Reference}
+\label{classIOperatorManager}\index{\-I\-Operator\-Manager@{\-I\-Operator\-Manager}}
+}
+
+
+\-This interface represent the methods that should be implemented by an operator manager.  
+
+
+
+
+{\ttfamily \#include $<$\-A\-Operator\-Manager.\-h$>$}
+
+
+
+\subsection{\-Detailed \-Description}
+\-This interface represent the methods that should be implemented by an operator manager. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-A\-Operator\-Manager.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classSimpleLocalSearchManager}{\section{\-Simple\-Local\-Search\-Manager \-Class \-Reference}
+\label{classSimpleLocalSearchManager}\index{\-Simple\-Local\-Search\-Manager@{\-Simple\-Local\-Search\-Manager}}
+}
+\-Inheritance diagram for \-Simple\-Local\-Search\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSimpleLocalSearchManager}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSimpleLocalSearchManager_a31e41079ea8d2aa1630bbee2f1cbe7fd}{{\bfseries \-Simple\-Local\-Search\-Manager} (\hyperlink{classALNS__Parameters}{\-A\-L\-N\-S\-\_\-\-Parameters} \&parameters)}\label{classSimpleLocalSearchManager_a31e41079ea8d2aa1630bbee2f1cbe7fd}
+
+\item 
+virtual bool \hyperlink{classSimpleLocalSearchManager_a213c380b351e4c7c4b4948ad7da513a7}{use\-Local\-Search} (\hyperlink{classISolution}{\-I\-Solution} \&sol, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)
+\item 
+\hypertarget{classSimpleLocalSearchManager_acd75ce5f7619a645520b5e1ebe854ee3}{void \hyperlink{classSimpleLocalSearchManager_acd75ce5f7619a645520b5e1ebe854ee3}{add\-Local\-Search\-Operator} (\hyperlink{classILocalSearch}{\-I\-Local\-Search} \&ls)}\label{classSimpleLocalSearchManager_acd75ce5f7619a645520b5e1ebe854ee3}
+
+\begin{DoxyCompactList}\small\item\em \-Add a local search operator to the manager. \end{DoxyCompactList}\item 
+\hypertarget{classSimpleLocalSearchManager_abf69f94e9d32260cf5eaed192c42114c}{virtual void \hyperlink{classSimpleLocalSearchManager_abf69f94e9d32260cf5eaed192c42114c}{start\-Signal} ()}\label{classSimpleLocalSearchManager_abf69f94e9d32260cf5eaed192c42114c}
+
+\begin{DoxyCompactList}\small\item\em \-Indicate that the optimization process starts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSimpleLocalSearchManager_a213c380b351e4c7c4b4948ad7da513a7}{\index{\-Simple\-Local\-Search\-Manager@{\-Simple\-Local\-Search\-Manager}!use\-Local\-Search@{use\-Local\-Search}}
+\index{use\-Local\-Search@{use\-Local\-Search}!SimpleLocalSearchManager@{\-Simple\-Local\-Search\-Manager}}
+\subsubsection[{use\-Local\-Search}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Simple\-Local\-Search\-Manager\-::use\-Local\-Search} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{sol, }
+\item[{{\bf \-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classSimpleLocalSearchManager_a213c380b351e4c7c4b4948ad7da513a7}
+
+\begin{DoxyParams}{\-Parameters}
+{\em sol} & the solution to be improved. \\
+\hline
+{\em status} & the status of the alns iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true if the solution has been improved. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classILocalSearchManager_ab12f478c7be7163b674374ba478f2cbd}{\-I\-Local\-Search\-Manager}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/localsearch/\-Simple\-Local\-Search\-Manager.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/localsearch/\-Simple\-Local\-Search\-Manager.\-cpp\end{DoxyCompactItemize}

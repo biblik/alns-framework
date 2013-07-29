@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/43/trunk/ReleaseStatic
+END
+sources.mk
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/43/trunk/ReleaseStatic/sources.mk
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/43/trunk/ReleaseStatic/makefile
+END
+objects.mk
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/43/trunk/ReleaseStatic/objects.mk
+END

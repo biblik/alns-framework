@@ -1,0 +1,85 @@
+\hypertarget{classTimeLinearCoolingSchedule}{\section{\-Time\-Linear\-Cooling\-Schedule \-Class \-Reference}
+\label{classTimeLinearCoolingSchedule}\index{\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}}
+}
+
+
+\-A linear cooling schedule based on the maximum running time.  
+
+
+
+
+{\ttfamily \#include $<$\-Time\-Linear\-Cooling\-Schedule.\-h$>$}
+
+\-Inheritance diagram for \-Time\-Linear\-Cooling\-Schedule\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTimeLinearCoolingSchedule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTimeLinearCoolingSchedule_ab5fa018fab6d1fb011e6e91bfdb6641a}{\-Time\-Linear\-Cooling\-Schedule} (\hyperlink{classISolution}{\-I\-Solution} \&init\-Sol, \hyperlink{classCoolingSchedule__Parameters}{\-Cooling\-Schedule\-\_\-\-Parameters} \&cs\-Param)
+\item 
+\hypertarget{classTimeLinearCoolingSchedule_a0877911daae13d58c67a2a6b7c384397}{virtual \hyperlink{classTimeLinearCoolingSchedule_a0877911daae13d58c67a2a6b7c384397}{$\sim$\-Time\-Linear\-Cooling\-Schedule} ()}\label{classTimeLinearCoolingSchedule_a0877911daae13d58c67a2a6b7c384397}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{classTimeLinearCoolingSchedule_a67dffb918e6c67ba8fecad1b764f36ea}{get\-Current\-Temperature} ()
+\item 
+virtual void \hyperlink{classTimeLinearCoolingSchedule_a44190e4c27b218610724a8e41c65291f}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A linear cooling schedule based on the maximum running time. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classTimeLinearCoolingSchedule_ab5fa018fab6d1fb011e6e91bfdb6641a}{\index{\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}!\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}}
+\index{\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}!TimeLinearCoolingSchedule@{\-Time\-Linear\-Cooling\-Schedule}}
+\subsubsection[{\-Time\-Linear\-Cooling\-Schedule}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Time\-Linear\-Cooling\-Schedule\-::\-Time\-Linear\-Cooling\-Schedule} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{init\-Sol, }
+\item[{{\bf \-Cooling\-Schedule\-\_\-\-Parameters} \&}]{cs\-Param}
+\end{DoxyParamCaption}
+)}}\label{classTimeLinearCoolingSchedule_ab5fa018fab6d1fb011e6e91bfdb6641a}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em init\-Sol} & the initial solution. \\
+\hline
+{\em cs\-Param} & the cooling schedule parameters to be used. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classTimeLinearCoolingSchedule_a67dffb918e6c67ba8fecad1b764f36ea}{\index{\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}!get\-Current\-Temperature@{get\-Current\-Temperature}}
+\index{get\-Current\-Temperature@{get\-Current\-Temperature}!TimeLinearCoolingSchedule@{\-Time\-Linear\-Cooling\-Schedule}}
+\subsubsection[{get\-Current\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Time\-Linear\-Cooling\-Schedule\-::get\-Current\-Temperature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classTimeLinearCoolingSchedule_a67dffb918e6c67ba8fecad1b764f36ea}
+\-Compute and return the current temperature. \begin{DoxyReturn}{\-Returns}
+the current temperature. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{\-I\-Cooling\-Schedule}.
+
+\hypertarget{classTimeLinearCoolingSchedule_a44190e4c27b218610724a8e41c65291f}{\index{\-Time\-Linear\-Cooling\-Schedule@{\-Time\-Linear\-Cooling\-Schedule}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!TimeLinearCoolingSchedule@{\-Time\-Linear\-Cooling\-Schedule}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Time\-Linear\-Cooling\-Schedule\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classTimeLinearCoolingSchedule_a44190e4c27b218610724a8e41c65291f}
+\-This method should be called when the optimization process start. \-The cooling schedules that actually need this should override this method. 
+
+\-Reimplemented from \hyperlink{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}{\-I\-Cooling\-Schedule}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Time\-Linear\-Cooling\-Schedule.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Time\-Linear\-Cooling\-Schedule.\-cpp\end{DoxyCompactItemize}

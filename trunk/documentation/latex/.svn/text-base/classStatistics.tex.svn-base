@@ -1,0 +1,33 @@
+\hypertarget{classStatistics}{\section{\-Statistics \-Class \-Reference}
+\label{classStatistics}\index{\-Statistics@{\-Statistics}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStatistics_a60ddd90a571ed4c3ce8c0f6317a36d63}{\hyperlink{classStatistics_a60ddd90a571ed4c3ce8c0f6317a36d63}{\-Statistics} ()}\label{classStatistics_a60ddd90a571ed4c3ce8c0f6317a36d63}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classStatistics_ab68ede75479e44d5c35b78ec1284065b}{virtual \hyperlink{classStatistics_ab68ede75479e44d5c35b78ec1284065b}{$\sim$\-Statistics} ()}\label{classStatistics_ab68ede75479e44d5c35b78ec1284065b}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classStatistics_a3f0fd8c2da757960f26749fc1394d01e}{void \hyperlink{classStatistics_a3f0fd8c2da757960f26749fc1394d01e}{add\-Entry} (double time\-Stamp, size\-\_\-t iteration, std\-::string destroy\-Name, std\-::string recreate\-Name, double new\-Cost, double current\-Cost, double best\-Cost, int cum\-K\-S)}\label{classStatistics_a3f0fd8c2da757960f26749fc1394d01e}
+
+\begin{DoxyCompactList}\small\item\em \-This method adds an entry to the data. \end{DoxyCompactList}\item 
+\hypertarget{classStatistics_a5fc6621a8e83fcd2eb4b8d8597e60177}{void {\bfseries add\-Operator\-Entry} (std\-::vector$<$ double $>$ $\ast$weight, std\-::vector$<$ size\-\_\-t $>$ $\ast$calls)}\label{classStatistics_a5fc6621a8e83fcd2eb4b8d8597e60177}
+
+\item 
+\hypertarget{classStatistics_a42db1ff91fa1657d4d61412b18111695}{void {\bfseries add\-Operators\-Names} (std\-::vector$<$ std\-::string $>$ $\ast$names)}\label{classStatistics_a42db1ff91fa1657d4d61412b18111695}
+
+\item 
+\hypertarget{classStatistics_ab02409562fa0f74d240356b7fc4a35d7}{void \hyperlink{classStatistics_ab02409562fa0f74d240356b7fc4a35d7}{generate\-Stats\-File} (std\-::string path, std\-::string path\-Op)}\label{classStatistics_ab02409562fa0f74d240356b7fc4a35d7}
+
+\begin{DoxyCompactList}\small\item\em \-This method generate the file containing the datas. \end{DoxyCompactList}\item 
+\hypertarget{classStatistics_af2593852c918bd4110c2ec649b146537}{void {\bfseries set\-Start} ()}\label{classStatistics_af2593852c918bd4110c2ec649b146537}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/statistics/\-Statistics.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/statistics/\-Statistics.\-cpp\end{DoxyCompactItemize}

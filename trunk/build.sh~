@@ -1,0 +1,5 @@
+cd Release
+make clean
+make
+cd ..
+doxygen ALNSlib.doxyfile

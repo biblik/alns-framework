@@ -1,0 +1,75 @@
+\hypertarget{classIAcceptanceModule}{\section{\-I\-Acceptance\-Module \-Class \-Reference}
+\label{classIAcceptanceModule}\index{\-I\-Acceptance\-Module@{\-I\-Acceptance\-Module}}
+}
+
+
+\-This is an interface to define acceptance modules within the \hyperlink{classALNS}{\-A\-L\-N\-S}.  
+
+
+
+
+{\ttfamily \#include $<$\-I\-Acceptance\-Module.\-h$>$}
+
+\-Inheritance diagram for \-I\-Acceptance\-Module\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIAcceptanceModule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classIAcceptanceModule_a47655425cbbbd5ff70106214169a7f1c}{transition\-Accepted} (\hyperlink{classIBestSolutionManager}{\-I\-Best\-Solution\-Manager} \&best\-Solution\-Manager, \hyperlink{classISolution}{\-I\-Solution} \&current\-Solution, \hyperlink{classISolution}{\-I\-Solution} \&new\-Solution, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)=0
+\item 
+virtual void \hyperlink{classIAcceptanceModule_adf6b1054982d528815e339aa8a829d4a}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is an interface to define acceptance modules within the \hyperlink{classALNS}{\-A\-L\-N\-S}. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classIAcceptanceModule_adf6b1054982d528815e339aa8a829d4a}{\index{\-I\-Acceptance\-Module@{\-I\-Acceptance\-Module}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!IAcceptanceModule@{\-I\-Acceptance\-Module}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Acceptance\-Module\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classIAcceptanceModule_adf6b1054982d528815e339aa8a829d4a}
+\-Some \-Acceptance modules needs to initialize some variable only when the solver actualy starts working. \-In this case you should override this method. 
+
+\-Reimplemented in \hyperlink{classSimulatedAnnealing_a13ddd574a0528f64801016a235ec8ee3}{\-Simulated\-Annealing}.
+
+\hypertarget{classIAcceptanceModule_a47655425cbbbd5ff70106214169a7f1c}{\index{\-I\-Acceptance\-Module@{\-I\-Acceptance\-Module}!transition\-Accepted@{transition\-Accepted}}
+\index{transition\-Accepted@{transition\-Accepted}!IAcceptanceModule@{\-I\-Acceptance\-Module}}
+\subsubsection[{transition\-Accepted}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool {\bf \-I\-Acceptance\-Module\-::transition\-Accepted} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Best\-Solution\-Manager} \&}]{best\-Solution\-Manager, }
+\item[{{\bf \-I\-Solution} \&}]{current\-Solution, }
+\item[{{\bf \-I\-Solution} \&}]{new\-Solution, }
+\item[{{\bf \-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classIAcceptanceModule_a47655425cbbbd5ff70106214169a7f1c}
+\-Indicate if the new created solution have to be accepted or not 
+\begin{DoxyParams}{\-Parameters}
+{\em best\-Solution\-Manager} & a reference to the best solution manager. \\
+\hline
+{\em current\-Solution} & current solution. \\
+\hline
+{\em new\-Solution} & new solution. \\
+\hline
+{\em status} & the status of the current alns iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true if the transition is accepted, false otherwise. 
+\end{DoxyReturn}
+
+
+\-Implemented in \hyperlink{classSimulatedAnnealing_a1bea2151b5c2b9b18f16bb47337af3cc}{\-Simulated\-Annealing}, and \hyperlink{classDummyAcceptanceModule_a0db83ebfd5f38764dcd7a747cf3feb5a}{\-Dummy\-Acceptance\-Module}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-I\-Acceptance\-Module.\-h\end{DoxyCompactItemize}

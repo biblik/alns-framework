@@ -1,0 +1,38 @@
+\hypertarget{classILocalSearch}{\section{\-I\-Local\-Search \-Class \-Reference}
+\label{classILocalSearch}\index{\-I\-Local\-Search@{\-I\-Local\-Search}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classILocalSearch_a90d10a19f474467638bbafbe702cd321}{perform\-Local\-Search} (\hyperlink{classISolution}{\-I\-Solution} \&sol)=0
+\item 
+virtual std\-::string \hyperlink{classILocalSearch_a9f65ab48fd9feae07a4314544908bbe7}{get\-Name} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classILocalSearch_a9f65ab48fd9feae07a4314544908bbe7}{\index{\-I\-Local\-Search@{\-I\-Local\-Search}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!ILocalSearch@{\-I\-Local\-Search}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string {\bf \-I\-Local\-Search\-::get\-Name} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classILocalSearch_a9f65ab48fd9feae07a4314544908bbe7}
+\begin{DoxyReturn}{\-Returns}
+the name of the local search operator. 
+\end{DoxyReturn}
+\hypertarget{classILocalSearch_a90d10a19f474467638bbafbe702cd321}{\index{\-I\-Local\-Search@{\-I\-Local\-Search}!perform\-Local\-Search@{perform\-Local\-Search}}
+\index{perform\-Local\-Search@{perform\-Local\-Search}!ILocalSearch@{\-I\-Local\-Search}}
+\subsubsection[{perform\-Local\-Search}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool {\bf \-I\-Local\-Search\-::perform\-Local\-Search} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{sol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classILocalSearch_a90d10a19f474467638bbafbe702cd321}
+\-Perform a local search on the solution. \begin{DoxyReturn}{\-Returns}
+true if the solution is improved. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/localsearch/\-I\-Local\-Search.\-h\end{DoxyCompactItemize}

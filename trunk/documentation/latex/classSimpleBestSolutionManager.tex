@@ -1,0 +1,75 @@
+\hypertarget{classSimpleBestSolutionManager}{\section{\-Simple\-Best\-Solution\-Manager \-Class \-Reference}
+\label{classSimpleBestSolutionManager}\index{\-Simple\-Best\-Solution\-Manager@{\-Simple\-Best\-Solution\-Manager}}
+}
+\-Inheritance diagram for \-Simple\-Best\-Solution\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSimpleBestSolutionManager}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSimpleBestSolutionManager_a776c41f8abf2720ecbdfea78d88b0f00}{{\bfseries \-Simple\-Best\-Solution\-Manager} (\hyperlink{classALNS__Parameters}{\-A\-L\-N\-S\-\_\-\-Parameters} \&param)}\label{classSimpleBestSolutionManager_a776c41f8abf2720ecbdfea78d88b0f00}
+
+\item 
+virtual bool \hyperlink{classSimpleBestSolutionManager_a8237e1d633717d3dc69c35ff5a88497a}{is\-New\-Best\-Solution} (\hyperlink{classISolution}{\-I\-Solution} \&sol)
+\item 
+\hypertarget{classSimpleBestSolutionManager_a3dda02789fdfd353d0759567d5514977}{std\-::list$<$ \hyperlink{classISolution}{\-I\-Solution} $\ast$ $>$\-::iterator \hyperlink{classSimpleBestSolutionManager_a3dda02789fdfd353d0759567d5514977}{begin} ()}\label{classSimpleBestSolutionManager_a3dda02789fdfd353d0759567d5514977}
+
+\begin{DoxyCompactList}\small\item\em \-Return a pointer to a best solution. \end{DoxyCompactList}\item 
+\hypertarget{classSimpleBestSolutionManager_a1c8934fa905385e6ba6570e694101e29}{std\-::list$<$ \hyperlink{classISolution}{\-I\-Solution} $\ast$ $>$\-::iterator \hyperlink{classSimpleBestSolutionManager_a1c8934fa905385e6ba6570e694101e29}{end} ()}\label{classSimpleBestSolutionManager_a1c8934fa905385e6ba6570e694101e29}
+
+\begin{DoxyCompactList}\small\item\em \-Return a pointer to a best solution. \end{DoxyCompactList}\item 
+virtual \hyperlink{classISolution}{\-I\-Solution} $\ast$ \hyperlink{classSimpleBestSolutionManager_ab65e6cbfff67aa80bab7c05c4c07f7a1}{reload\-Best\-Solution} (\hyperlink{classISolution}{\-I\-Solution} $\ast$curr\-Sol, \hyperlink{classALNS__Iteration__Status}{\-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&status)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSimpleBestSolutionManager_a8237e1d633717d3dc69c35ff5a88497a}{\index{\-Simple\-Best\-Solution\-Manager@{\-Simple\-Best\-Solution\-Manager}!is\-New\-Best\-Solution@{is\-New\-Best\-Solution}}
+\index{is\-New\-Best\-Solution@{is\-New\-Best\-Solution}!SimpleBestSolutionManager@{\-Simple\-Best\-Solution\-Manager}}
+\subsubsection[{is\-New\-Best\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Simple\-Best\-Solution\-Manager\-::is\-New\-Best\-Solution} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{sol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classSimpleBestSolutionManager_a8237e1d633717d3dc69c35ff5a88497a}
+\-This method evaluate if a solution is a new best solution, and adds it to the best solution pool in this case. 
+\begin{DoxyParams}{\-Parameters}
+{\em sol} & the solution to be tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true if the solution is a new best solution, false otherwise. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classIBestSolutionManager_adf056afba7bfda2b3a3260d8118d5c44}{\-I\-Best\-Solution\-Manager}.
+
+\hypertarget{classSimpleBestSolutionManager_ab65e6cbfff67aa80bab7c05c4c07f7a1}{\index{\-Simple\-Best\-Solution\-Manager@{\-Simple\-Best\-Solution\-Manager}!reload\-Best\-Solution@{reload\-Best\-Solution}}
+\index{reload\-Best\-Solution@{reload\-Best\-Solution}!SimpleBestSolutionManager@{\-Simple\-Best\-Solution\-Manager}}
+\subsubsection[{reload\-Best\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-I\-Solution} $\ast$ {\bf \-Simple\-Best\-Solution\-Manager\-::reload\-Best\-Solution} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} $\ast$}]{curr\-Sol, }
+\item[{{\bf \-A\-L\-N\-S\-\_\-\-Iteration\-\_\-\-Status} \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classSimpleBestSolutionManager_ab65e6cbfff67aa80bab7c05c4c07f7a1}
+\-This function take care of reloading the best known solution, as the current solution, if needed. 
+\begin{DoxyParams}{\-Parameters}
+{\em curr\-Sol} & a pointer to the current solution. \\
+\hline
+{\em status} & the status of the current iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+a pointer to the current solution. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classIBestSolutionManager_a592e8c6de9b295e834ef04f52ae376a6}{\-I\-Best\-Solution\-Manager}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-Simple\-Best\-Solution\-Manager.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-Simple\-Best\-Solution\-Manager.\-cpp\end{DoxyCompactItemize}

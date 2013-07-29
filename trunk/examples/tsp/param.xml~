@@ -1,0 +1,77 @@
+<Parameters>
+	<ALNS>
+		<MaxNbIterations>100000</MaxNbIterations>
+		<MaxRunTime>300</MaxRunTime>
+		<MaxNbIterationsNoImp>100000</MaxNbIterationsNoImp>
+		<StoppingCriterion>ALL</StoppingCriterion>
+		<Noise>true</Noise>
+		<TimeSegmentIt>100</TimeSegmentIt>
+		<NbItBeforeReinit>1000</NbItBeforeReinit>
+		<Sigma1>33</Sigma1>
+		<Sigma2>20</Sigma2>
+		<Sigma3>12</Sigma3>
+		<Rho>0.1</Rho>
+		<MinimumWeight>1</MinimumWeight>
+		<MaximumWeight>20</MaximumWeight>
+		<ProbabilityOfNoise>0.5</ProbabilityOfNoise>
+		<AcKind>SA</AcKind>
+		<ReloadFrequency>1000</ReloadFrequency>
+		<LogFrequency>1</LogFrequency>
+		<StatsGlobPath>/home/renaud/workspaceCPP/HCG_DRP/stats/globStats</StatsGlobPath>
+		<StatsOpPath>/home/renaud/workspaceCPP/HCG_DRP/stats/opStats</StatsOpPath>
+		<ForbiddenOperators>
+			<ForbiddenOperator>GapRepair</ForbiddenOperator>
+			<ForbiddenOperator>GGapRepair</ForbiddenOperator>
+			<ForbiddenOperator>GapRepairSteps</ForbiddenOperator>
+			<ForbiddenOperator>AssignmentOp</ForbiddenOperator>
+			<ForbiddenOperator>KregretB</ForbiddenOperator>
+			<ForbiddenOperator>Kregret1B</ForbiddenOperator>
+			<ForbiddenOperator>Kregret2B</ForbiddenOperator>
+			<ForbiddenOperator>Kregret3B</ForbiddenOperator>
+			<ForbiddenOperator>Kregret4B</ForbiddenOperator>
+			<ForbiddenOperator>Kregret5B</ForbiddenOperator>
+			<ForbiddenOperator>HcgRepair</ForbiddenOperator>
+			<ForbiddenOperator>Splitrepair</ForbiddenOperator>
+			<ForbiddenOperator>Random RemovalB</ForbiddenOperator>
+			<ForbiddenOperator>Worst RemovalB</ForbiddenOperator>
+			<ForbiddenOperator>Cluster RemovalB</ForbiddenOperator>
+			<ForbiddenOperator>History RemovalB</ForbiddenOperator>
+			<ForbiddenOperator>RouteRemovalB</ForbiddenOperator>
+			<ForbiddenOperator>HintRemovalB</ForbiddenOperator>
+		</ForbiddenOperators>
+		<PerformLocalSearch>true</PerformLocalSearch>
+		<ForbiddenLSOperators>
+			<ForbiddenLSOperator>ReinsertionLS</ForbiddenLSOperator>
+			<ForbiddenLSOperator>ReAssignmentLS</ForbiddenLSOperator>
+		</ForbiddenLSOperators>
+	</ALNS>
+	<CoolingSchedule>
+		<Kind>Exponential_mix</Kind>
+		<ExpPercentageKept>0.95</ExpPercentageKept>
+		<SetupPercentage>0.05</SetupPercentage>
+		<NbThresholds>100</NbThresholds>
+	</CoolingSchedule>
+	<GRASP>
+		<NbStart>3</NbStart>
+	</GRASP>
+	<HCG>
+		<NbColGeneratedBeforeStopPricing>5</NbColGeneratedBeforeStopPricing>
+		<NbIterationTabu>50</NbIterationTabu>
+		<MaxNbIterationWithNoSignificantImprovement>2000</MaxNbIterationWithNoSignificantImprovement>
+		<RelativeSignificantImprovement>0.1</RelativeSignificantImprovement>
+		<MaxNbColumnsInPool>50000</MaxNbColumnsInPool>
+		<ReasonableNumberOfColumnInPool>30000</ReasonableNumberOfColumnInPool>
+		<CpxParamEpopt>0.01</CpxParamEpopt>
+		<CpxParamEpgap>0.005</CpxParamEpgap>
+		<CpxAlg>Primal</CpxAlg>	
+		<miniDest>5</miniDest>	
+		<maxiDest>40</maxiDest>
+		<miniDestReq>30</miniDestReq>	
+		<maxiDestReq>60</maxiDestReq>
+		<probNoLS>-1</probNoLS>
+		<noiseAmount>0</noiseAmount>
+		<percNonTabuArcs>1.0</percNonTabuArcs>
+		<tabuListSize>8</tabuListSize>
+		<maxNbCGCycles>3000</maxNbCGCycles>
+	</HCG>
+</Parameters>

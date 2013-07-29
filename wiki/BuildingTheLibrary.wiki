@@ -1,0 +1,20 @@
+#summary Explanation of how to build the library on an Unix system.
+#labels Phase-Deploy
+
+= Introduction =
+
+We are going to go through the steps needed to build the alns-framework library.
+
+
+= Details =
+
+First you needed to get the source code of the project to be able to build it.
+
+To do so, in a terminal type the following command : <br/>
+<b>svn checkout http://alns-framework.googlecode.com/svn/trunk/ alns-framework-read-only</b>
+
+Then you need to build the project and its documentation. To do so, type the following commands : <br/>
+<b>cd alns-framework-read-only</b> <br/>
+<b>./build.sh</b>
+
+That's all ! The library is now built and can be used.

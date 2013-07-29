@@ -1,0 +1,93 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+CPP_SRCS += \
+./TSPSolution.cpp \
+./TSP_Best_Insert.cpp \
+./TSP_History_Removal.cpp \
+./TSP_LS.cpp \
+./TSP_Random_Insert.cpp \
+./TSP_Random_Removal.cpp \
+./TSP_Worst_Removal.cpp \
+./main.cpp 
+
+OBJS += \
+./TSPSolution.o \
+./TSP_Best_Insert.o \
+./TSP_History_Removal.o \
+./TSP_LS.o \
+./TSP_Random_Insert.o \
+./TSP_Random_Removal.o \
+./TSP_Worst_Removal.o \
+./main.o 
+
+CPP_DEPS += \
+./TSPSolution.d \
+./TSP_Best_Insert.d \
+./TSP_History_Removal.d \
+./TSP_LS.d \
+./TSP_Random_Insert.d \
+./TSP_Random_Removal.d \
+./TSP_Worst_Removal.d \
+./main.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: %.cpp
+	echo 'Building file: $<'
+	echo 'Invoking: Cross G++ Compiler'
+	g++ -I"/../../src" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+LIBS := -l:libALNS-framework.so
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# All Target
+all: TSP
+
+# Tool invocations
+TSP: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: Cross G++ Linker'
+	g++ -L/../../Release -o "TSP" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) TSP
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

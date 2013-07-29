@@ -1,0 +1,75 @@
+\hypertarget{classExponentialCoolingSchedule}{\section{\-Exponential\-Cooling\-Schedule \-Class \-Reference}
+\label{classExponentialCoolingSchedule}\index{\-Exponential\-Cooling\-Schedule@{\-Exponential\-Cooling\-Schedule}}
+}
+
+
+\-An exponential cooling schedule based on a mix of the maximum running time and the number of iterations.  
+
+
+
+
+{\ttfamily \#include $<$\-Exponential\-Cooling\-Schedule.\-h$>$}
+
+\-Inheritance diagram for \-Exponential\-Cooling\-Schedule\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classExponentialCoolingSchedule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExponentialCoolingSchedule_a41341124cd5cac5e92bf90d78d967462}{\-Exponential\-Cooling\-Schedule} (\hyperlink{classISolution}{\-I\-Solution} \&init\-Sol, \hyperlink{classCoolingSchedule__Parameters}{\-Cooling\-Schedule\-\_\-\-Parameters} \&cs\-Param)
+\item 
+\hypertarget{classExponentialCoolingSchedule_a28ec19b3dd2a2da22132027de5119d5f}{virtual \hyperlink{classExponentialCoolingSchedule_a28ec19b3dd2a2da22132027de5119d5f}{$\sim$\-Exponential\-Cooling\-Schedule} ()}\label{classExponentialCoolingSchedule_a28ec19b3dd2a2da22132027de5119d5f}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{classExponentialCoolingSchedule_ac32efff552a53ff64ff00deb490b1cb7}{get\-Current\-Temperature} ()
+\item 
+\hypertarget{classExponentialCoolingSchedule_a64b6a3c4b329b18ca55c68d75cb03a00}{virtual void \hyperlink{classExponentialCoolingSchedule_a64b6a3c4b329b18ca55c68d75cb03a00}{start\-Signal} ()}\label{classExponentialCoolingSchedule_a64b6a3c4b329b18ca55c68d75cb03a00}
+
+\begin{DoxyCompactList}\small\item\em \-This method is called when the optimization process start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-An exponential cooling schedule based on a mix of the maximum running time and the number of iterations. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classExponentialCoolingSchedule_a41341124cd5cac5e92bf90d78d967462}{\index{\-Exponential\-Cooling\-Schedule@{\-Exponential\-Cooling\-Schedule}!\-Exponential\-Cooling\-Schedule@{\-Exponential\-Cooling\-Schedule}}
+\index{\-Exponential\-Cooling\-Schedule@{\-Exponential\-Cooling\-Schedule}!ExponentialCoolingSchedule@{\-Exponential\-Cooling\-Schedule}}
+\subsubsection[{\-Exponential\-Cooling\-Schedule}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Exponential\-Cooling\-Schedule\-::\-Exponential\-Cooling\-Schedule} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Solution} \&}]{init\-Sol, }
+\item[{{\bf \-Cooling\-Schedule\-\_\-\-Parameters} \&}]{cs\-Param}
+\end{DoxyParamCaption}
+)}}\label{classExponentialCoolingSchedule_a41341124cd5cac5e92bf90d78d967462}
+\-Constructor. 
+\begin{DoxyParams}{\-Parameters}
+{\em init\-Sol} & the initial solution. \\
+\hline
+{\em cs\-Param} & the cooling schedule parameters to be used. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classExponentialCoolingSchedule_ac32efff552a53ff64ff00deb490b1cb7}{\index{\-Exponential\-Cooling\-Schedule@{\-Exponential\-Cooling\-Schedule}!get\-Current\-Temperature@{get\-Current\-Temperature}}
+\index{get\-Current\-Temperature@{get\-Current\-Temperature}!ExponentialCoolingSchedule@{\-Exponential\-Cooling\-Schedule}}
+\subsubsection[{get\-Current\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Exponential\-Cooling\-Schedule\-::get\-Current\-Temperature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classExponentialCoolingSchedule_ac32efff552a53ff64ff00deb490b1cb7}
+\-Compute and return the current temperature. \begin{DoxyReturn}{\-Returns}
+the current temperature. 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{\-I\-Cooling\-Schedule}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Exponential\-Cooling\-Schedule.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Exponential\-Cooling\-Schedule.\-cpp\end{DoxyCompactItemize}

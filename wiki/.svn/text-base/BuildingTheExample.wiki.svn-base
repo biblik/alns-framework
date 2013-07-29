@@ -1,0 +1,23 @@
+#summary How to build the Examples on an Unix system.
+#labels Phase-Deploy
+
+= Introduction =
+
+We are going to go through the steps needed to build the TSP example provided with the library.
+
+
+= Details =
+
+First open a terminal and get to the *tsp* directory in the *examples* directory.
+
+Type : 
+
+*make*
+
+The example can now be run by typing the following command :
+
+*./TSP*
+
+There is two things that needs to be noted to be able to compile a project using the ALNS-framework library : <br/>
+- You need to include the directory containing the source files of the ALNS-framework library (using the option of g++ -I"$PATH_ALNS_LIB/src" where $PATH_ALNS_LIB is the path to the ALNS-framework directory) <br/>
+- You need to link the shared library libALNS-framework.so to your project to do so you need to indicate the path to the shared library (by using the options -L"$PATH_ALNS_LIB/Release" where $PATH_ALNS_LIB is still the path to the ALNS-framework directory) and -l:libALNS-framework.so

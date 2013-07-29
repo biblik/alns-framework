@@ -1,0 +1,91 @@
+\hypertarget{classCoolingSchedule__Parameters}{\section{\-Cooling\-Schedule\-\_\-\-Parameters \-Class \-Reference}
+\label{classCoolingSchedule__Parameters}\index{\-Cooling\-Schedule\-\_\-\-Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}}
+}
+
+
+\-This class represent parameters to be used to instantiate cooling schedules.  
+
+
+
+
+{\ttfamily \#include $<$\-Cooling\-Schedule\-\_\-\-Parameters.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCoolingSchedule__Parameters_a8f5c0d2aabf39957308a738d88c2f16a}{\-C\-S\-Kind} \{ \*
+{\bfseries \-Linear\-\_\-it}, 
+{\bfseries \-Linear\-\_\-time}, 
+{\bfseries \-Linear\-\_\-mix}, 
+{\bfseries \-Exponential\-\_\-it}, 
+\*
+{\bfseries \-Exponential\-\_\-time}, 
+{\bfseries \-Exponential\-\_\-mix}
+ \}
+\begin{DoxyCompactList}\small\item\em \-Enumeration representing the various kind of cooling schedules that can be handled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCoolingSchedule__Parameters_aa55a639451c12ef5c97eb0fab6314947}{\hyperlink{classCoolingSchedule__Parameters_aa55a639451c12ef5c97eb0fab6314947}{\-Cooling\-Schedule\-\_\-\-Parameters} (\hyperlink{classALNS__Parameters}{\-A\-L\-N\-S\-\_\-\-Parameters} \&alns\-Param)}\label{classCoolingSchedule__Parameters_aa55a639451c12ef5c97eb0fab6314947}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classCoolingSchedule__Parameters_af5a521c2ccc81e1d2406ebf99b644881}{\hyperlink{classCoolingSchedule__Parameters_af5a521c2ccc81e1d2406ebf99b644881}{$\sim$\-Cooling\-Schedule\-\_\-\-Parameters} ()}\label{classCoolingSchedule__Parameters_af5a521c2ccc81e1d2406ebf99b644881}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classCoolingSchedule__Parameters_aa0241491f174761ed09d7f451351c3c3}{void \hyperlink{classCoolingSchedule__Parameters_aa0241491f174761ed09d7f451351c3c3}{sanity\-Checks} ()}\label{classCoolingSchedule__Parameters_aa0241491f174761ed09d7f451351c3c3}
+
+\begin{DoxyCompactList}\small\item\em \-Perform some sanity checks on the values of the parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classCoolingSchedule__Parameters_a3d668de3af41138374b459c023e53b55}{load\-Parameters} (std\-::string path)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCoolingSchedule__Parameters_ad7c13cb862526a5f104105a7139c1a79}{\hyperlink{classCoolingSchedule__Parameters_a8f5c0d2aabf39957308a738d88c2f16a}{\-C\-S\-Kind} \hyperlink{classCoolingSchedule__Parameters_ad7c13cb862526a5f104105a7139c1a79}{kind}}\label{classCoolingSchedule__Parameters_ad7c13cb862526a5f104105a7139c1a79}
+
+\begin{DoxyCompactList}\small\item\em \-The kind of cooling schedule to be used. \end{DoxyCompactList}\item 
+double \hyperlink{classCoolingSchedule__Parameters_a288ef5bba5e1b04f1e00c83a8664f7b8}{exp\-Percentage\-Kept}
+\item 
+double \hyperlink{classCoolingSchedule__Parameters_a11baeae90fe80f917c33703e8b456f32}{setup\-Percentage}
+\item 
+\hypertarget{classCoolingSchedule__Parameters_a0975632fdd8eef8bbdb843d3898e6813}{size\-\_\-t \hyperlink{classCoolingSchedule__Parameters_a0975632fdd8eef8bbdb843d3898e6813}{nb\-Thresholds}}\label{classCoolingSchedule__Parameters_a0975632fdd8eef8bbdb843d3898e6813}
+
+\begin{DoxyCompactList}\small\item\em \-The number of temperature recomputations during the optimization process. \end{DoxyCompactList}\item 
+\hypertarget{classCoolingSchedule__Parameters_a91947e9b5d48723480502a295d1114fd}{size\-\_\-t \hyperlink{classCoolingSchedule__Parameters_a91947e9b5d48723480502a295d1114fd}{max\-It}}\label{classCoolingSchedule__Parameters_a91947e9b5d48723480502a295d1114fd}
+
+\begin{DoxyCompactList}\small\item\em \-The maximum number of iterations. \end{DoxyCompactList}\item 
+\hypertarget{classCoolingSchedule__Parameters_aa14ff24f11c1a4e9b365889cf2223442}{size\-\_\-t \hyperlink{classCoolingSchedule__Parameters_aa14ff24f11c1a4e9b365889cf2223442}{max\-R\-T}}\label{classCoolingSchedule__Parameters_aa14ff24f11c1a4e9b365889cf2223442}
+
+\begin{DoxyCompactList}\small\item\em \-The maximum running time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class represent parameters to be used to instantiate cooling schedules. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classCoolingSchedule__Parameters_a3d668de3af41138374b459c023e53b55}{\index{\-Cooling\-Schedule\-\_\-\-Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}!load\-Parameters@{load\-Parameters}}
+\index{load\-Parameters@{load\-Parameters}!CoolingSchedule_Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}}
+\subsubsection[{load\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Cooling\-Schedule\-\_\-\-Parameters\-::load\-Parameters} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{path}
+\end{DoxyParamCaption}
+)}}\label{classCoolingSchedule__Parameters_a3d668de3af41138374b459c023e53b55}
+\-Load the parameters from a text file. 
+\begin{DoxyParams}{\-Parameters}
+{\em path} & the path to the text file containing the parameters. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classCoolingSchedule__Parameters_a288ef5bba5e1b04f1e00c83a8664f7b8}{\index{\-Cooling\-Schedule\-\_\-\-Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}!exp\-Percentage\-Kept@{exp\-Percentage\-Kept}}
+\index{exp\-Percentage\-Kept@{exp\-Percentage\-Kept}!CoolingSchedule_Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}}
+\subsubsection[{exp\-Percentage\-Kept}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Cooling\-Schedule\-\_\-\-Parameters\-::exp\-Percentage\-Kept}}}\label{classCoolingSchedule__Parameters_a288ef5bba5e1b04f1e00c83a8664f7b8}
+\-In case of the use of an exponential cooling schedule, the percentage of the current temperature kept at each temperature recomputation. \hypertarget{classCoolingSchedule__Parameters_a11baeae90fe80f917c33703e8b456f32}{\index{\-Cooling\-Schedule\-\_\-\-Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}!setup\-Percentage@{setup\-Percentage}}
+\index{setup\-Percentage@{setup\-Percentage}!CoolingSchedule_Parameters@{\-Cooling\-Schedule\-\_\-\-Parameters}}
+\subsubsection[{setup\-Percentage}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Cooling\-Schedule\-\_\-\-Parameters\-::setup\-Percentage}}}\label{classCoolingSchedule__Parameters_a11baeae90fe80f917c33703e8b456f32}
+\-To determine the starting temperature, how worse than the initial solution can a solution be to have a 50\% chance of being accepted at the starting temperature. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Cooling\-Schedule\-\_\-\-Parameters.\-h\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-Cooling\-Schedule\-\_\-\-Parameters.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{classICoolingSchedule}{\section{\-I\-Cooling\-Schedule \-Class \-Reference}
+\label{classICoolingSchedule}\index{\-I\-Cooling\-Schedule@{\-I\-Cooling\-Schedule}}
+}
+
+
+\-This is an interface to define cooling schedule to be used by a simulated annealing.  
+
+
+
+
+{\ttfamily \#include $<$\-I\-Cooling\-Schedule.\-h$>$}
+
+\-Inheritance diagram for \-I\-Cooling\-Schedule\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.546961cm]{classICoolingSchedule}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{get\-Current\-Temperature} ()=0
+\item 
+virtual void \hyperlink{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}{start\-Signal} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is an interface to define cooling schedule to be used by a simulated annealing. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}{\index{\-I\-Cooling\-Schedule@{\-I\-Cooling\-Schedule}!get\-Current\-Temperature@{get\-Current\-Temperature}}
+\index{get\-Current\-Temperature@{get\-Current\-Temperature}!ICoolingSchedule@{\-I\-Cooling\-Schedule}}
+\subsubsection[{get\-Current\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}virtual double {\bf \-I\-Cooling\-Schedule\-::get\-Current\-Temperature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classICoolingSchedule_ac5d2dbf784cde3a36fd5e7c5c3fbdd96}
+\begin{DoxyReturn}{\-Returns}
+the current temperature. 
+\end{DoxyReturn}
+
+
+\-Implemented in \hyperlink{classLinearCoolingSchedule_ab47b31f34bfe387e9c70d702a0b6301b}{\-Linear\-Cooling\-Schedule}, \hyperlink{classExponentialCoolingSchedule_ac32efff552a53ff64ff00deb490b1cb7}{\-Exponential\-Cooling\-Schedule}, \hyperlink{classMixLinearCoolingSchedule_aa388d2510df3ae9eff98bc48df8dc92d}{\-Mix\-Linear\-Cooling\-Schedule}, and \hyperlink{classTimeLinearCoolingSchedule_a67dffb918e6c67ba8fecad1b764f36ea}{\-Time\-Linear\-Cooling\-Schedule}.
+
+\hypertarget{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}{\index{\-I\-Cooling\-Schedule@{\-I\-Cooling\-Schedule}!start\-Signal@{start\-Signal}}
+\index{start\-Signal@{start\-Signal}!ICoolingSchedule@{\-I\-Cooling\-Schedule}}
+\subsubsection[{start\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Cooling\-Schedule\-::start\-Signal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classICoolingSchedule_aa87b9fe07eb7f03a7c4bad8f6f31b8a2}
+\-This method should be called when the optimization process start. \-The cooling schedules that actually need this should override this method. 
+
+\-Reimplemented in \hyperlink{classLinearCoolingSchedule_a384afd4b7b7e89ebf1268974b28fad84}{\-Linear\-Cooling\-Schedule}, \hyperlink{classExponentialCoolingSchedule_a64b6a3c4b329b18ca55c68d75cb03a00}{\-Exponential\-Cooling\-Schedule}, \hyperlink{classMixLinearCoolingSchedule_a97c3c7d9e485ee6d1ee5cd19175f56b7}{\-Mix\-Linear\-Cooling\-Schedule}, and \hyperlink{classTimeLinearCoolingSchedule_a44190e4c27b218610724a8e41c65291f}{\-Time\-Linear\-Cooling\-Schedule}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/acceptance\-Module/\-I\-Cooling\-Schedule.\-h\end{DoxyCompactItemize}
