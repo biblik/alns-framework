@@ -258,8 +258,11 @@ void ParameterTuning::writeBestParameters(std::string path)
 
 void ParameterTuning::optimizeParameters(std::string outputPath)
 {
+	cout << "begin Optimize" << endl;
 	time_t start = time(0);
+	cout << "compute default conf" << endl;
 	bestScore = evaluateConfiguration(*alnsParams,*amParams);
+	cout << "ended compute default conf" << endl;
 	time_t currentTime = time(0);
 	int pass = 0;
 	while(difftime(currentTime, start)<maximumRuntime)
