@@ -175,6 +175,10 @@ public:
 	//! iteration of the ALNS.
 	//! \param up the updatable object to be added.
 	void addUpdatable(IUpdatable& up){updatableStructures.push_back(&up);};
+
+	//! Destroy the manager that have been provided at the construction of
+	//! the instance.
+	void end();
 };
 
 #endif /* ALNS_H_ */

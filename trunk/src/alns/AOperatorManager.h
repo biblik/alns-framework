@@ -58,6 +58,9 @@ public:
 	//! Indicate that the optimization process starts.
 	virtual void startSignal()=0;
 
+	//! Destroy the operators registered to this operator manager.
+	virtual void end()=0;
+
     //! Simple setter.
 	void setStatistics(Statistics* statistics){stats = statistics;};
 protected:

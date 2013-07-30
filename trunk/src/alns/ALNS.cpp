@@ -310,4 +310,11 @@ bool ALNS::isStoppingCriterionMet()
 
 }
 
-
+void ALNS::end()
+{
+	opManager->end();
+	delete opManager;
+	delete acceptanceCriterion;
+	delete lsManager;
+	delete bestSolManager;
+}

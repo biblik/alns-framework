@@ -63,6 +63,7 @@ public:
 	bool transitionAccepted(IBestSolutionManager& bestSolutionManager, ISolution& currentSolution, ISolution& newSolution, ALNS_Iteration_Status& status);
 
 	virtual void startSignal();
+
 };
 
 #endif /* SIMULATEDANNEALING_H_ */

@@ -112,6 +112,9 @@ public:
 	//! Indicate that the optimization process starts.
 	virtual void startSignal();
 
+	//! Destroy all the operators registered to this operator.
+	void end();
+
 };
 
 #endif /* OPERATORMANAGER_H_ */

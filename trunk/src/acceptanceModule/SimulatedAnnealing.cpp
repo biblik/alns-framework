@@ -38,7 +38,7 @@ SimulatedAnnealing::SimulatedAnnealing(ICoolingSchedule& cs) {
 }
 
 SimulatedAnnealing::~SimulatedAnnealing() {
-	// Nothing to be done.
+	delete coolingSchedule;
 }
 
 bool SimulatedAnnealing::transitionAccepted(IBestSolutionManager& bestSolutionManager, ISolution& currentSolution, ISolution& newSolution, ALNS_Iteration_Status& status)

@@ -67,6 +67,7 @@ void ParameterTuning::runInstance(ALNS_Parameters_optimizable* ap,
 	{
 		currentScores.push_back(5*best->getObjectiveValue());
 	}
+	solver->end();
 	delete solver;
 	delete ap;
 	delete cp;

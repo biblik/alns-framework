@@ -237,3 +237,15 @@ void OperatorManager::updateScores(ADestroyOperator& des, ARepairOperator& rep, 
 		des.setScore(des.getScore()+parameters->getSigma3());
 	}
 }
+
+void OperatorManager::end()
+{
+	for(int i = 0; i < repairOperators.size(); ++i)
+	{
+		delete repairOperators[i];
+	}
+	for(int i = 0; i < destroyOperators.size(); ++i)
+	{
+		delete destroyOperators[i];
+	}
+}
