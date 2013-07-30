@@ -59,7 +59,14 @@ void ParameterTuning::runInstance(ALNS_Parameters_optimizable* ap,
 	ALNS* solver = solverBuilder->buildSolver(ap,cp,s);
 	solver->solve();
 	ISolution* best = *(solver->getBestSolutionManager()->begin());
-	currentScores.push_back(best->getObjectiveValue());
+	if(best->isFeasible())
+	{
+		currentScores.push_back(best->getObjectiveValue());
+	}
+	else
+	{
+		currentScores.push_back(5*best->getObjectiveValue());
+	}
 	delete solver;
 	delete ap;
 	delete cp;
@@ -70,6 +77,7 @@ void ParameterTuning::runInstance(ALNS_Parameters_optimizable* ap,
 void ParameterTuning::modifyParameters(ALNS_Parameters_optimizable* ap,
 		CoolingSchedule_Parameters_Optimizable* cp) {
 	int randInt = rand()%(ap->getNbTunableParameters()+cp->getNbTunableParameters());
+	cout << randInt << " : rand 1" << endl;
 	if(randInt < ap->getNbTunableParameters())
 	{
 		ap->modifyOneParameter();
@@ -84,10 +92,12 @@ double ParameterTuning::evaluateConfiguration(ALNS_Parameters_optimizable& ap,
 		CoolingSchedule_Parameters_Optimizable& cp)
 {
 	string hash = buildHash(ap,cp);
+	cout << scores.size() << endl;
 	map<string,double>::iterator it = scores.find(hash);
 	// If this configuration has already been evaluated we just access its cost.
 	if(it == scores.end())
 	{
+		cout << hash << endl;
 		if(ap.getMinDestroyPerc() > ap.getMaxDestroyPerc()
 			|| ap.getMinimumWeight() > ap.getMaximumWeight())
 		{
@@ -107,7 +117,7 @@ double ParameterTuning::evaluateConfiguration(ALNS_Parameters_optimizable& ap,
 						std::this_thread::sleep_for(std::chrono::milliseconds(100));
 						if(availableThreads > 0)
 						{
-							t[nbRunPerInstance*problemSet.size() + j] = new thread(&ParameterTuning::runInstance,this,new ALNS_Parameters_optimizable(ap), new CoolingSchedule_Parameters_Optimizable(cp), problemSet[j]->getCopy());
+							t[i*problemSet.size() + j] = new thread(&ParameterTuning::runInstance,this,new ALNS_Parameters_optimizable(ap), new CoolingSchedule_Parameters_Optimizable(cp), problemSet[j]->getCopy());
 							launched = true;
 						}
 					}
@@ -139,6 +149,8 @@ double ParameterTuning::evaluateConfiguration(ALNS_Parameters_optimizable& ap,
 	}
 	else
 	{
+		cout << it->first << endl;
+		cout << it->second << endl;
 		return it->second;
 	}
 }
@@ -249,12 +261,16 @@ void ParameterTuning::optimizeParameters(std::string outputPath)
 	time_t start = time(0);
 	bestScore = evaluateConfiguration(*alnsParams,*amParams);
 	time_t currentTime = time(0);
+	int pass = 0;
 	while(difftime(currentTime, start)<maximumRuntime)
 	{
+		// We print the number of pass.
+		cout << "PASS : " << ++pass << endl;
 		ALNS_Parameters_optimizable* p1 = new ALNS_Parameters_optimizable(*bestAlnsParams);
 		CoolingSchedule_Parameters_Optimizable* p2 = new CoolingSchedule_Parameters_Optimizable(*bestAmParams);
 		modifyParameters(p1,p2);
 		double currScore = evaluateConfiguration(*p1,*p2);
+		cout << "Score Pass " << pass << " = " << currScore << " ; currentBestScore = " << bestScore << endl;
 		if(currScore < bestScore)
 		{
 			delete bestAlnsParams;

@@ -25,6 +25,7 @@
  */
 
 #include <cstdlib>
+#include <cmath>
 #include <sstream>
 #include "ALNSParametersoptimizable.h"
 #include "../lib/tinyxml/tinyxml.h"
@@ -300,6 +301,7 @@ ALNS_Parameters_optimizable::~ALNS_Parameters_optimizable() {
 void ALNS_Parameters_optimizable::modifyOneParameter()
 {
 	int selectionParam = rand()%getNbTunableParameters();
+	cout << selectionParam << " : rand 2" << endl;
 	switch(selectionParam)
 	{
 	case 0:
@@ -343,60 +345,84 @@ void ALNS_Parameters_optimizable::modifyOneParameter()
 
 void ALNS_Parameters_optimizable::modifyTimeSegmentsIt()
 {
-	timeSegmentsIt = lbTimeSegmentsIt + rand()%(ubTimeSegmentsIt-lbTimeSegmentsIt);
+	cout << "timeSegmentIt Before" << timeSegmentsIt << endl;
+	timeSegmentsIt = lbTimeSegmentsIt + rand()%max(ubTimeSegmentsIt-lbTimeSegmentsIt,static_cast<size_t>(1));
+	cout << "timeSegmentIt After" << timeSegmentsIt << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyNbItBeforReinit()
 {
-	nbItBeforeReinit = lbNbItBeforReinit + rand()%(ubNbItBeforReinit-lbNbItBeforReinit);
+	cout << "nbItBeforeReinit Before" << nbItBeforeReinit << endl;
+	nbItBeforeReinit = lbNbItBeforReinit + rand()%max(ubNbItBeforReinit-lbNbItBeforReinit,static_cast<size_t>(1));
+	cout << "nbItBeforeReinit After" << nbItBeforeReinit << endl;
 }
 
 void ALNS_Parameters_optimizable::modifySigma1()
 {
-	sigma1 = lbSigma1 + rand()%(ubSigma1-lbSigma1);
+	cout << "Sigma1 Before" << sigma1 << endl;
+	sigma1 = lbSigma1 + rand()%max(ubSigma1-lbSigma1,1);
+	cout << "Sigma1 After" << sigma1 << endl;
 }
 
 void ALNS_Parameters_optimizable::modifySigma2()
 {
-	sigma2 = lbSigma2 + rand()%(ubSigma2-lbSigma2);
+	cout << "Sigma2 Before" << sigma2 << endl;
+	sigma2 = lbSigma2 + rand()%max(ubSigma2-lbSigma2,1);
+	cout << "Sigma2 After" << sigma2 << endl;
 }
 
 void ALNS_Parameters_optimizable::modifySigma3()
 {
-	sigma3 = lbSigma3 + rand()%(ubSigma3-lbSigma3);
+	cout << "Sigma3 Before" << sigma3 << endl;
+	sigma3 = lbSigma3 + rand()%max(ubSigma3-lbSigma3,1);
+	cout << "Sigma3 After" << sigma3 << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyRho()
 {
-	rho = lbRho + (ubRho-lbRho)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));;
+	cout << "Rho Before" << rho << endl;
+	rho = lbRho + (ubRho-lbRho)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "Rho After" << rho << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyMinimumWeight()
 {
-	minimumWeight = lbMinimumWeight + (ubMinimumWeight-lbMinimumWeight)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));;
+	cout << "MinimumWeight Before" << minimumWeight << endl;
+	minimumWeight = lbMinimumWeight + (ubMinimumWeight-lbMinimumWeight)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "MaximumWeight After" << minimumWeight << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyMaximumWeight()
 {
-	maximumWeight = lbMaximumWeight + (ubMaximumWeight-lbMaximumWeight)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));;
+	cout << "MaximumWeight Before" << maximumWeight << endl;
+	maximumWeight = lbMaximumWeight + (ubMaximumWeight-lbMaximumWeight)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "MaximumWeight After" << maximumWeight << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyProbabilityOfNoise()
 {
+	cout << "probabilityOfNoise Before" << probabilityOfNoise << endl;
 	probabilityOfNoise = lbProbabilityOfNoise + (ubProbabilityOfNoise-lbProbabilityOfNoise)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "probabilityOfNoise After" << probabilityOfNoise << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyMinDestroy()
 {
-	minDestroyPerc = lbMinDestroyPerc + rand()%(ubMinDestroyPerc-lbMinDestroyPerc);
+	cout << "MinDestroyPerc Before" << minDestroyPerc << endl;
+	minDestroyPerc = lbMinDestroyPerc + rand()%max(ubMinDestroyPerc-lbMinDestroyPerc,1);
+	cout << "MinDestroyPerc After" << minDestroyPerc << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyMaxDestroy()
 {
-	maxDestroyPerc = lbMaxDestroyPerc + rand()%(ubMaxDestroyPerc-lbMaxDestroyPerc);
+	cout << "MaxDestroy Before" << maxDestroyPerc << endl;
+	maxDestroyPerc = lbMaxDestroyPerc + rand()%max(ubMaxDestroyPerc-lbMaxDestroyPerc,1);
+	cout << "MaxDestroy After" << maxDestroyPerc << endl;
 }
 
 void ALNS_Parameters_optimizable::modifyReloadFrequency()
 {
-	reloadFrequency = lbReloadFrequency + rand()%(ubReloadFrequency-lbReloadFrequency);
+	cout << "ReloadFrequency Before" << reloadFrequency << endl;
+	reloadFrequency = lbReloadFrequency + rand()%max(ubReloadFrequency-lbReloadFrequency,static_cast<size_t>(1));
+	cout << "ReloadFrequency After" << reloadFrequency << endl;
 }

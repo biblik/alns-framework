@@ -24,6 +24,7 @@
  *	Renaud Masson
  */
 
+#include <cmath>
 #include "CoolingScheduleParametersOptimizable.h"
 #include <sstream>
 #include <cstdlib>
@@ -74,12 +75,16 @@ void CoolingSchedule_Parameters_Optimizable::modifyOneParameter() {
 
 void CoolingSchedule_Parameters_Optimizable::modifyExpPercentageKept()
 {
+	cout << "PercentageKept Before" << expPercentageKept << endl;
 	expPercentageKept = lbExpPercentageKept + (ubExpPercentageKept-lbExpPercentageKept)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "PercentageKept After" << expPercentageKept << endl;
 }
 
 void CoolingSchedule_Parameters_Optimizable::modifySetupPercentage()
 {
+	cout << "SetupPercentage Before" << setupPercentage << endl;
 	setupPercentage = lbSetupPercentage + (ubSetupPercentage-lbSetupPercentage)*(static_cast<double>(rand())/static_cast<double>(RAND_MAX));
+	cout << "SetupPercentage After" << setupPercentage << endl;
 }
 
 void CoolingSchedule_Parameters_Optimizable::loadAllXMLParameters(

@@ -68,7 +68,14 @@ ALNS_Parameters::ALNS_Parameters()
 
 	performLocalSearch = true;
 
+	probabilityOfNoise = 0;
+
+	reloadFrequency = 10000;
+
 	lock = false;
+
+	minDestroyPerc = 1;
+	maxDestroyPerc = 60;
 }
 
 ALNS_Parameters::~ALNS_Parameters()
@@ -516,6 +523,10 @@ ALNS_Parameters::ALNS_Parameters(ALNS_Parameters& p)
 	acPath = p.acPath;
 
 	logFrequency = p.logFrequency;
+
+	reloadFrequency = p.reloadFrequency;
+
+	probabilityOfNoise = p.probabilityOfNoise;
 
 	performLocalSearch = p.performLocalSearch;
 
