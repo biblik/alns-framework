@@ -211,6 +211,8 @@ void ParameterTuning::writeBestParameters(std::string path)
 	os << setw(4) << "<Rho>" << bestAlnsParams->getRho() << "</Rho>" << endl;
 	os << setw(4) << "<MinimumWeight>" << bestAlnsParams->getMinimumWeight() << "</MinimumWeight>" << endl;
 	os << setw(4) << "<MaximumWeight>" << bestAlnsParams->getMaximumWeight() << "</MaximumWeight>" << endl;
+	os << setw(4) << "<MinDestroyPerc>" << bestAlnsParams->getMinDestroyPerc() << "</MinDestroyPerc>" << endl;
+	os << setw(4) << "<MaxDestroyPerc>" << bestAlnsParams->getMaxDestroyPerc() << "</MaxDestroyPerc>" << endl;
 	os << setw(4) << "<ProbabilityOfNoise>" << bestAlnsParams->getProbabilityOfNoise() << "</ProbabilityOfNoise>" << endl;
 	os << setw(4) << "<AcKind>SA</AcKind>" << endl;
 	os << setw(4) << "<ReloadFrequency>" << bestAlnsParams->getReloadFrequency() << "</ReloadFrequency>" << endl;
