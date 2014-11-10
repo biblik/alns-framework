@@ -50,6 +50,10 @@ LinearCoolingSchedule::~LinearCoolingSchedule() {
 double LinearCoolingSchedule::getCurrentTemperature()
 {
 	currentTemperature-= amountRemove;
+	if(currentTemperature < 0)
+	{
+		currentTemperature = 0;
+	}
 	assert(currentTemperature>=0);
 	return currentTemperature;
 }
