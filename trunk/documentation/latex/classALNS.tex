@@ -1,151 +1,160 @@
-\hypertarget{classALNS}{\section{\-A\-L\-N\-S \-Class \-Reference}
-\label{classALNS}\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}}
+\hypertarget{classALNS}{\section{A\-L\-N\-S Class Reference}
+\label{classALNS}\index{A\-L\-N\-S@{A\-L\-N\-S}}
 }
 
 
-\-This class contains the \hyperlink{classALNS}{\-A\-L\-N\-S} logic.  
+This class contains the \hyperlink{classALNS}{A\-L\-N\-S} logic.  
 
 
 
 
-{\ttfamily \#include $<$\-A\-L\-N\-S.\-h$>$}
+{\ttfamily \#include $<$A\-L\-N\-S.\-h$>$}
 
-\subsection*{\-Public \-Member \-Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classALNS_a73b1c0d89a08733cf96b8bd3bd3b1ee0}{\-A\-L\-N\-S} (std\-::string instance\-Name, \hyperlink{classISolution}{\-I\-Solution} \&initial\-Solution, \hyperlink{classIAcceptanceModule}{\-I\-Acceptance\-Module} \&acceptance\-Crit, \hyperlink{classALNS__Parameters}{\-A\-L\-N\-S\-\_\-\-Parameters} \&parameters, \hyperlink{classAOperatorManager}{\-A\-Operator\-Manager} \&op\-Man, \hyperlink{classIBestSolutionManager}{\-I\-Best\-Solution\-Manager} \&sol\-Man, \hyperlink{classILocalSearchManager}{\-I\-Local\-Search\-Manager} \&ls\-Man)
+\hyperlink{classALNS_a73b1c0d89a08733cf96b8bd3bd3b1ee0}{A\-L\-N\-S} (std\-::string instance\-Name, \hyperlink{classISolution}{I\-Solution} \&initial\-Solution, \hyperlink{classIAcceptanceModule}{I\-Acceptance\-Module} \&acceptance\-Crit, \hyperlink{classALNS__Parameters}{A\-L\-N\-S\-\_\-\-Parameters} \&parameters, \hyperlink{classAOperatorManager}{A\-Operator\-Manager} \&op\-Man, \hyperlink{classIBestSolutionManager}{I\-Best\-Solution\-Manager} \&sol\-Man, \hyperlink{classILocalSearchManager}{I\-Local\-Search\-Manager} \&ls\-Man)
 \item 
 \hypertarget{classALNS_a981532332c893575df882950ba108420}{virtual \hyperlink{classALNS_a981532332c893575df882950ba108420}{$\sim$\-A\-L\-N\-S} ()}\label{classALNS_a981532332c893575df882950ba108420}
 
-\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 bool \hyperlink{classALNS_a02bfc43130ca878023ab85da3990aee8}{solve} ()
 \item 
-bool \hyperlink{classALNS_a603d6dfef21bcb16cb0d4e0ee70dcad8}{check\-Against\-Known\-Solution} (\hyperlink{classISolution}{\-I\-Solution} \&sol)
+bool \hyperlink{classALNS_a603d6dfef21bcb16cb0d4e0ee70dcad8}{check\-Against\-Known\-Solution} (\hyperlink{classISolution}{I\-Solution} \&sol)
 \item 
 void \hyperlink{classALNS_af86fb8b68cd36fc947c53d53edf37841}{perform\-One\-Iteration} ()
 \item 
 \hypertarget{classALNS_a914ea0dff7f09b5fd5da9ab8040515a7}{bool \hyperlink{classALNS_a914ea0dff7f09b5fd5da9ab8040515a7}{is\-Stopping\-Criterion\-Met} ()}\label{classALNS_a914ea0dff7f09b5fd5da9ab8040515a7}
 
-\begin{DoxyCompactList}\small\item\em \-This method check whether or not the stopping criteria is met. \end{DoxyCompactList}\item 
-bool \hyperlink{classALNS_a3dec1742b0f3e6bfc03a087ccb1cf5ee}{is\-New\-Best} (\hyperlink{classISolution}{\-I\-Solution} $\ast$new\-Sol)
+\begin{DoxyCompactList}\small\item\em This method check whether or not the stopping criteria is met. \end{DoxyCompactList}\item 
+bool \hyperlink{classALNS_a3dec1742b0f3e6bfc03a087ccb1cf5ee}{is\-New\-Best} (\hyperlink{classISolution}{I\-Solution} $\ast$new\-Sol)
 \item 
 size\-\_\-t \hyperlink{classALNS_a24567f634de0dd28dc09c7ccde13f7c2}{get\-Number\-Known\-Solutions} ()
 \item 
-bool \hyperlink{classALNS_a6c9c4ccbbfac3a70ef92dca8fbff68b4}{transition\-Current\-Solution} (\hyperlink{classISolution}{\-I\-Solution} $\ast$new\-Sol)
+bool \hyperlink{classALNS_a6c9c4ccbbfac3a70ef92dca8fbff68b4}{transition\-Current\-Solution} (\hyperlink{classISolution}{I\-Solution} $\ast$new\-Sol)
 \item 
-\hypertarget{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}{\hyperlink{classIBestSolutionManager}{\-I\-Best\-Solution\-Manager} $\ast$ \hyperlink{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}{get\-Best\-Solution\-Manager} ()}\label{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}
+\hypertarget{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}{\hyperlink{classIBestSolutionManager}{I\-Best\-Solution\-Manager} $\ast$ \hyperlink{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}{get\-Best\-Solution\-Manager} ()}\label{classALNS_a8070a2581e7cee3cb46452eef5f97aaf}
 
-\begin{DoxyCompactList}\small\item\em \-Return a pointer to the best known solution. \end{DoxyCompactList}\item 
-void \hyperlink{classALNS_adde152b15ac1197b1b31232ee205072c}{add\-Updatable} (\hyperlink{classIUpdatable}{\-I\-Updatable} \&up)
+\begin{DoxyCompactList}\small\item\em Return a pointer to the best known solution. \end{DoxyCompactList}\item 
+void \hyperlink{classALNS_adde152b15ac1197b1b31232ee205072c}{add\-Updatable} (\hyperlink{classIUpdatable}{I\-Updatable} \&up)
+\item 
+void \hyperlink{classALNS_a6d32f5f1178d89d4f34fc19aff270a5b}{end} ()
 \end{DoxyCompactItemize}
 
 
-\subsection{\-Detailed \-Description}
-\-This class contains the \hyperlink{classALNS}{\-A\-L\-N\-S} logic. 
+\subsection{Detailed Description}
+This class contains the \hyperlink{classALNS}{A\-L\-N\-S} logic. 
 
-\-This class contains the logic of the \hyperlink{classALNS}{\-A\-L\-N\-S} (\-Adaptive \-Large \-Neighborhood \-Search). \-The general idea of the \hyperlink{classALNS}{\-A\-L\-N\-S} is to iteratively destroy then repair a solution to improve its quality. \-Non improving solution may be accepted as the new current solution according to some acceptance criteria. \-If you are interested about the general functionning of this method please refer to\-: \-S. \-Ropke \& \-D. \-Pisinger. \-An \-Adaptive \-Large \-Neighborhood \-Search \-Heuristic for \-Pickup and \-Delivery \-Problem with \-Time \-Windows. \-Transportation \-Science, 40 (2006) 455-\/472. 
+This class contains the logic of the \hyperlink{classALNS}{A\-L\-N\-S} (Adaptive Large Neighborhood Search). The general idea of the \hyperlink{classALNS}{A\-L\-N\-S} is to iteratively destroy then repair a solution to improve its quality. Non improving solution may be accepted as the new current solution according to some acceptance criteria. If you are interested about the general functionning of this method please refer to\-: S. Ropke \& D. Pisinger. An Adaptive Large Neighborhood Search Heuristic for Pickup and Delivery Problem with Time Windows. Transportation Science, 40 (2006) 455-\/472. 
 
-\subsection{\-Constructor \& \-Destructor \-Documentation}
-\hypertarget{classALNS_a73b1c0d89a08733cf96b8bd3bd3b1ee0}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!\-A\-L\-N\-S@{\-A\-L\-N\-S}}
-\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{\-A\-L\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-A\-L\-N\-S\-::\-A\-L\-N\-S} (
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classALNS_a73b1c0d89a08733cf96b8bd3bd3b1ee0}{\index{A\-L\-N\-S@{A\-L\-N\-S}!A\-L\-N\-S@{A\-L\-N\-S}}
+\index{A\-L\-N\-S@{A\-L\-N\-S}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{A\-L\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}A\-L\-N\-S\-::\-A\-L\-N\-S (
 \begin{DoxyParamCaption}
 \item[{std\-::string}]{instance\-Name, }
-\item[{{\bf \-I\-Solution} \&}]{initial\-Solution, }
-\item[{{\bf \-I\-Acceptance\-Module} \&}]{acceptance\-Crit, }
-\item[{{\bf \-A\-L\-N\-S\-\_\-\-Parameters} \&}]{parameters, }
-\item[{{\bf \-A\-Operator\-Manager} \&}]{op\-Man, }
-\item[{{\bf \-I\-Best\-Solution\-Manager} \&}]{sol\-Man, }
-\item[{{\bf \-I\-Local\-Search\-Manager} \&}]{ls\-Man}
+\item[{{\bf I\-Solution} \&}]{initial\-Solution, }
+\item[{{\bf I\-Acceptance\-Module} \&}]{acceptance\-Crit, }
+\item[{{\bf A\-L\-N\-S\-\_\-\-Parameters} \&}]{parameters, }
+\item[{{\bf A\-Operator\-Manager} \&}]{op\-Man, }
+\item[{{\bf I\-Best\-Solution\-Manager} \&}]{sol\-Man, }
+\item[{{\bf I\-Local\-Search\-Manager} \&}]{ls\-Man}
 \end{DoxyParamCaption}
 )}}\label{classALNS_a73b1c0d89a08733cf96b8bd3bd3b1ee0}
-\-Constructor. 
-\begin{DoxyParams}{\-Parameters}
+Constructor. 
+\begin{DoxyParams}{Parameters}
 {\em name} & the name of the instance. \\
 \hline
 {\em initial\-Solution} & the starting solution that is going to be optimized. \\
 \hline
 {\em acceptance\-Crit} & the module that determine whether or not a new solution is accepted as the current solution. \\
 \hline
-{\em parameters} & the set of parameters to be use by the \hyperlink{classALNS}{\-A\-L\-N\-S}. \\
+{\em parameters} & the set of parameters to be use by the \hyperlink{classALNS}{A\-L\-N\-S}. \\
 \hline
 {\em op\-Man} & an operator manager. \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{\-Member \-Function \-Documentation}
-\hypertarget{classALNS_adde152b15ac1197b1b31232ee205072c}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!add\-Updatable@{add\-Updatable}}
-\index{add\-Updatable@{add\-Updatable}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{add\-Updatable}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-A\-L\-N\-S\-::add\-Updatable} (
+\subsection{Member Function Documentation}
+\hypertarget{classALNS_adde152b15ac1197b1b31232ee205072c}{\index{A\-L\-N\-S@{A\-L\-N\-S}!add\-Updatable@{add\-Updatable}}
+\index{add\-Updatable@{add\-Updatable}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{add\-Updatable}]{\setlength{\rightskip}{0pt plus 5cm}void A\-L\-N\-S\-::add\-Updatable (
 \begin{DoxyParamCaption}
-\item[{{\bf \-I\-Updatable} \&}]{up}
+\item[{{\bf I\-Updatable} \&}]{up}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classALNS_adde152b15ac1197b1b31232ee205072c}
-\-Add an object to the list of object to be updated at the end of each iteration of the \hyperlink{classALNS}{\-A\-L\-N\-S}. 
-\begin{DoxyParams}{\-Parameters}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classALNS_adde152b15ac1197b1b31232ee205072c}
+Add an object to the list of object to be updated at the end of each iteration of the \hyperlink{classALNS}{A\-L\-N\-S}. 
+\begin{DoxyParams}{Parameters}
 {\em up} & the updatable object to be added. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classALNS_a603d6dfef21bcb16cb0d4e0ee70dcad8}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!check\-Against\-Known\-Solution@{check\-Against\-Known\-Solution}}
-\index{check\-Against\-Known\-Solution@{check\-Against\-Known\-Solution}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{check\-Against\-Known\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-A\-L\-N\-S\-::check\-Against\-Known\-Solution} (
+\hypertarget{classALNS_a603d6dfef21bcb16cb0d4e0ee70dcad8}{\index{A\-L\-N\-S@{A\-L\-N\-S}!check\-Against\-Known\-Solution@{check\-Against\-Known\-Solution}}
+\index{check\-Against\-Known\-Solution@{check\-Against\-Known\-Solution}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{check\-Against\-Known\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-L\-N\-S\-::check\-Against\-Known\-Solution (
 \begin{DoxyParamCaption}
-\item[{{\bf \-I\-Solution} \&}]{sol}
+\item[{{\bf I\-Solution} \&}]{sol}
 \end{DoxyParamCaption}
 )}}\label{classALNS_a603d6dfef21bcb16cb0d4e0ee70dcad8}
-\-This method seeks if a solution is already known, if not it is added to the set of known solutions. 
-\begin{DoxyParams}{\-Parameters}
+This method seeks if a solution is already known, if not it is added to the set of known solutions. 
+\begin{DoxyParams}{Parameters}
 {\em sol} & the solution to be checked. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 true if the solution was unknown, false otherwise. 
 \end{DoxyReturn}
-\hypertarget{classALNS_a24567f634de0dd28dc09c7ccde13f7c2}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!get\-Number\-Known\-Solutions@{get\-Number\-Known\-Solutions}}
-\index{get\-Number\-Known\-Solutions@{get\-Number\-Known\-Solutions}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{get\-Number\-Known\-Solutions}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t {\bf \-A\-L\-N\-S\-::get\-Number\-Known\-Solutions} (
+\hypertarget{classALNS_a6d32f5f1178d89d4f34fc19aff270a5b}{\index{A\-L\-N\-S@{A\-L\-N\-S}!end@{end}}
+\index{end@{end}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void A\-L\-N\-S\-::end (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classALNS_a24567f634de0dd28dc09c7ccde13f7c2}
-\begin{DoxyReturn}{\-Returns}
+)}}\label{classALNS_a6d32f5f1178d89d4f34fc19aff270a5b}
+Destroy the manager that have been provided at the construction of the instance. \hypertarget{classALNS_a24567f634de0dd28dc09c7ccde13f7c2}{\index{A\-L\-N\-S@{A\-L\-N\-S}!get\-Number\-Known\-Solutions@{get\-Number\-Known\-Solutions}}
+\index{get\-Number\-Known\-Solutions@{get\-Number\-Known\-Solutions}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{get\-Number\-Known\-Solutions}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t A\-L\-N\-S\-::get\-Number\-Known\-Solutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classALNS_a24567f634de0dd28dc09c7ccde13f7c2}
+\begin{DoxyReturn}{Returns}
 the number of known solutions. 
 \end{DoxyReturn}
-\hypertarget{classALNS_a3dec1742b0f3e6bfc03a087ccb1cf5ee}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!is\-New\-Best@{is\-New\-Best}}
-\index{is\-New\-Best@{is\-New\-Best}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{is\-New\-Best}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-A\-L\-N\-S\-::is\-New\-Best} (
+\hypertarget{classALNS_a3dec1742b0f3e6bfc03a087ccb1cf5ee}{\index{A\-L\-N\-S@{A\-L\-N\-S}!is\-New\-Best@{is\-New\-Best}}
+\index{is\-New\-Best@{is\-New\-Best}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{is\-New\-Best}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-L\-N\-S\-::is\-New\-Best (
 \begin{DoxyParamCaption}
-\item[{{\bf \-I\-Solution} $\ast$}]{new\-Sol}
+\item[{{\bf I\-Solution} $\ast$}]{new\-Sol}
 \end{DoxyParamCaption}
 )}}\label{classALNS_a3dec1742b0f3e6bfc03a087ccb1cf5ee}
-\-Determine whether or not the new solution is better than the best known solution. \hypertarget{classALNS_af86fb8b68cd36fc947c53d53edf37841}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!perform\-One\-Iteration@{perform\-One\-Iteration}}
-\index{perform\-One\-Iteration@{perform\-One\-Iteration}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{perform\-One\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-A\-L\-N\-S\-::perform\-One\-Iteration} (
+Determine whether or not the new solution is better than the best known solution. \hypertarget{classALNS_af86fb8b68cd36fc947c53d53edf37841}{\index{A\-L\-N\-S@{A\-L\-N\-S}!perform\-One\-Iteration@{perform\-One\-Iteration}}
+\index{perform\-One\-Iteration@{perform\-One\-Iteration}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{perform\-One\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void A\-L\-N\-S\-::perform\-One\-Iteration (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classALNS_af86fb8b68cd36fc947c53d53edf37841}
-\-This method perform one iteration of the \hyperlink{classALNS}{\-A\-L\-N\-S} solving process. \hypertarget{classALNS_a02bfc43130ca878023ab85da3990aee8}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!solve@{solve}}
-\index{solve@{solve}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-A\-L\-N\-S\-::solve} (
+This method perform one iteration of the \hyperlink{classALNS}{A\-L\-N\-S} solving process. \hypertarget{classALNS_a02bfc43130ca878023ab85da3990aee8}{\index{A\-L\-N\-S@{A\-L\-N\-S}!solve@{solve}}
+\index{solve@{solve}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-L\-N\-S\-::solve (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classALNS_a02bfc43130ca878023ab85da3990aee8}
-\-This method launch the solving process. \begin{DoxyReturn}{\-Returns}
+This method launch the solving process. \begin{DoxyReturn}{Returns}
 true if a feasible solution is found, false otherwise. 
 \end{DoxyReturn}
-\hypertarget{classALNS_a6c9c4ccbbfac3a70ef92dca8fbff68b4}{\index{\-A\-L\-N\-S@{\-A\-L\-N\-S}!transition\-Current\-Solution@{transition\-Current\-Solution}}
-\index{transition\-Current\-Solution@{transition\-Current\-Solution}!ALNS@{\-A\-L\-N\-S}}
-\subsubsection[{transition\-Current\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-A\-L\-N\-S\-::transition\-Current\-Solution} (
+\hypertarget{classALNS_a6c9c4ccbbfac3a70ef92dca8fbff68b4}{\index{A\-L\-N\-S@{A\-L\-N\-S}!transition\-Current\-Solution@{transition\-Current\-Solution}}
+\index{transition\-Current\-Solution@{transition\-Current\-Solution}!ALNS@{A\-L\-N\-S}}
+\subsubsection[{transition\-Current\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-L\-N\-S\-::transition\-Current\-Solution (
 \begin{DoxyParamCaption}
-\item[{{\bf \-I\-Solution} $\ast$}]{new\-Sol}
+\item[{{\bf I\-Solution} $\ast$}]{new\-Sol}
 \end{DoxyParamCaption}
 )}}\label{classALNS_a6c9c4ccbbfac3a70ef92dca8fbff68b4}
-\-Determine whether or not the new solution should be accepted as the current solution. 
+Determine whether or not the new solution should be accepted as the current solution. 
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-A\-L\-N\-S.\-h\item 
-\-A\-L\-N\-S\-\_\-\-Static\-\_\-\-Lib/src/alns/\-A\-L\-N\-S.\-cpp\end{DoxyCompactItemize}
+src/alns/A\-L\-N\-S.\-h\item 
+src/alns/A\-L\-N\-S.\-cpp\end{DoxyCompactItemize}

@@ -214,7 +214,7 @@ void OperatorManager::updateScores(ADestroyOperator& des, ARepairOperator& rep, 
 	if(parameters->getNoise())
 	{
 		double randNoise = static_cast<double>(rand())/RAND_MAX;
-		noise = (randNoise>parameters->getProbabilityOfNoise());
+		noise = (randNoise<parameters->getProbabilityOfNoise());
 	}
 
 	if(status.getNewBestSolution() == ALNS_Iteration_Status::TRUE)
