@@ -39,6 +39,9 @@ OperatorManager::OperatorManager(ALNS_Parameters& param) {
 	sumWeightsRepair = 0;
 	sumWeightsDestroy = 0;
 	noise = false;
+
+	performanceRepairOperatorsWithNoise = 1;
+	performanceRepairOperatorsWithoutNoise = 1;
 }
 
 OperatorManager::~OperatorManager() {
@@ -106,6 +109,9 @@ void OperatorManager::recomputeWeights()
 	}
 
 	stats->addOperatorEntry(weightsStats,nbCalls);
+
+	performanceRepairOperatorsWithNoise = 1;
+	performanceRepairOperatorsWithoutNoise = 1;
 }
 
 void OperatorManager::startSignal()
@@ -211,22 +217,20 @@ void OperatorManager::sanityChecks()
 
 void OperatorManager::updateScores(ADestroyOperator& des, ARepairOperator& rep, ALNS_Iteration_Status& status)
 {
-	if(parameters->getNoise())
-	{
-		double randNoise = static_cast<double>(rand())/RAND_MAX;
-		noise = (randNoise<parameters->getProbabilityOfNoise());
-	}
-
 	if(status.getNewBestSolution() == ALNS_Iteration_Status::TRUE)
 	{
 		rep.setScore(rep.getScore()+parameters->getSigma1());
 		des.setScore(des.getScore()+parameters->getSigma1());
+		performanceRepairOperatorsWithNoise += 1;
+		performanceRepairOperatorsWithoutNoise += 1;
 	}
 
 	if(status.getImproveCurrentSolution() == ALNS_Iteration_Status::TRUE)
 	{
 		rep.setScore(rep.getScore()+parameters->getSigma2());
 		des.setScore(des.getScore()+parameters->getSigma2());
+		performanceRepairOperatorsWithNoise += 1;
+		performanceRepairOperatorsWithoutNoise += 1;
 	}
 
 	if(status.getImproveCurrentSolution() == ALNS_Iteration_Status::FALSE
@@ -235,7 +239,34 @@ void OperatorManager::updateScores(ADestroyOperator& des, ARepairOperator& rep, 
 	{
 		rep.setScore(rep.getScore()+parameters->getSigma3());
 		des.setScore(des.getScore()+parameters->getSigma3());
+		performanceRepairOperatorsWithNoise += 1;
+		performanceRepairOperatorsWithoutNoise += 1;
 	}
+
+	/* OLD VERSION */
+	/*
+	if(parameters->getNoise())
+	{
+		double randNoise = static_cast<double>(rand())/RAND_MAX;
+		noise = (randNoise<parameters->getProbabilityOfNoise());
+	}
+	*/
+
+	/* NEW VERSION */
+
+	if(parameters->getNoise())
+	{
+		double performanceRepairOperatorsGlobal = 0;
+		performanceRepairOperatorsGlobal += performanceRepairOperatorsWithNoise;
+		performanceRepairOperatorsGlobal += performanceRepairOperatorsWithoutNoise;
+
+		double randomVal = static_cast<double>(rand())/RAND_MAX;
+		double randomWeightPos = randomVal*performanceRepairOperatorsGlobal;
+		noise = (randomWeightPos < performanceRepairOperatorsGlobal);
+	}
+
+
+
 }
 
 void OperatorManager::end()

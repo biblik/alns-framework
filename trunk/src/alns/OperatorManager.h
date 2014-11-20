@@ -64,6 +64,10 @@ private:
 	//! should be noised or not.
 	bool noise;
 
+	//! A counter that indicates the number of times repair operators with noise have been successfull
+	double performanceRepairOperatorsWithNoise;
+	//! A counter that indicates the number of times repair operators without noise have been successfull
+	double performanceRepairOperatorsWithoutNoise;
 
 
 	//! Use a roulette wheel to select an operator in a vector of operators.
